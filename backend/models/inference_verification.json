@@ -1,0 +1,112 @@
+{
+  "verified": true,
+  "num_test_samples": 78,
+  "accuracy": 1.0,
+  "sample_predictions": [
+    {
+      "video_file": "sign project/10.youareperfect/0403(22).mp4",
+      "true_gloss": "YOU_ARE_PERFECT",
+      "pred_gloss": "YOU_ARE_PERFECT",
+      "confidence": 0.946,
+      "match": true
+    },
+    {
+      "video_file": "sign project/10.youareperfect/You are perfect -3.mp4",
+      "true_gloss": "YOU_ARE_PERFECT",
+      "pred_gloss": "YOU_ARE_PERFECT",
+      "confidence": 0.982,
+      "match": true
+    },
+    {
+      "video_file": "sign project/10.youareperfect/0403(23).mp4",
+      "true_gloss": "YOU_ARE_PERFECT",
+      "pred_gloss": "YOU_ARE_PERFECT",
+      "confidence": 0.955,
+      "match": true
+    },
+    {
+      "video_file": "sign project/14.bad/NachikethBad1.mov",
+      "true_gloss": "BAD",
+      "pred_gloss": "BAD",
+      "confidence": 0.988,
+      "match": true
+    },
+    {
+      "video_file": "sign project/14.bad/Bad -2.mp4",
+      "true_gloss": "BAD",
+      "pred_gloss": "BAD",
+      "confidence": 0.95,
+      "match": true
+    },
+    {
+      "video_file": "sign project/14.bad/Bad_1.mp4",
+      "true_gloss": "BAD",
+      "pred_gloss": "BAD",
+      "confidence": 0.987,
+      "match": true
+    },
+    {
+      "video_file": "sign project/15.boy/Boy1.mp4",
+      "true_gloss": "BOY",
+      "pred_gloss": "BOY",
+      "confidence": 0.762,
+      "match": true
+    },
+    {
+      "video_file": "sign project/15.boy/krishnarajboy2.mp4",
+      "true_gloss": "BOY",
+      "pred_gloss": "BOY",
+      "confidence": 0.942,
+      "match": true
+    },
+    {
+      "video_file": "sign project/15.boy/krishnarajboy3.mp4",
+      "true_gloss": "BOY",
+      "pred_gloss": "BOY",
+      "confidence": 0.919,
+      "match": true
+    },
+    {
+      "video_file": "sign project/16.eat/NachikethEat2.mov",
+      "true_gloss": "EAT",
+      "pred_gloss": "EAT",
+      "confidence": 0.944,
+      "match": true
+    },
+    {
+      "video_file": "sign project/16.eat/Eat -3.mp4",
+      "true_gloss": "EAT",
+      "pred_gloss": "EAT",
+      "confidence": 0.966,
+      "match": true
+    },
+    {
+      "video_file": "sign project/16.eat/0403(38).mp4",
+      "true_gloss": "EAT",
+      "pred_gloss": "EAT",
+      "confidence": 0.984,
+      "match": true
+    },
+    {
+      "video_file": "sign project/17.friend/KrishnarajFriend1.mp4",
+      "true_gloss": "FRIEND",
+      "pred_gloss": "FRIEND",
+      "confidence": 0.986,
+      "match": true
+    },
+    {
+      "video_file": "sign project/17.friend/0403(39).mp4",
+      "true_gloss": "FRIEND",
+      "pred_gloss": "FRIEND",
+      "confidence": 0.973,
+      "match": true
+    },
+    {
+      "video_file": "sign project/17.friend/KrishnarajFriend2.mp4",
+      "true_gloss": "FRIEND",
+      "pred_gloss": "FRIEND",
+      "confidence": 0.976,
+      "match": true
+    }
+  ]
+}

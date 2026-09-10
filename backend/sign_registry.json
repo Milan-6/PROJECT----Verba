@@ -1,0 +1,456 @@
+{
+  "hello": {
+    "sign_id": "hello",
+    "gloss": "HELLO",
+    "asset_type": "video",
+    "asset": "clips/hello.mp4",
+    "url": "/media/isl/clips/hello.mp4",
+    "verified": true,
+    "duration": 1.73,
+    "resolution": "1272x720",
+    "source": "Amrita ISL (9.hello/Hello1.mp4)",
+    "tags": [
+      "greeting"
+    ]
+  },
+  "help": {
+    "sign_id": "help",
+    "gloss": "HELP",
+    "asset_type": "video",
+    "asset": "clips/help.mp4",
+    "url": "/media/isl/clips/help.mp4",
+    "verified": true,
+    "duration": 3.07,
+    "resolution": "1280x720",
+    "source": "Amrita ISL (24.help/Help1.mp4)",
+    "tags": [
+      "request",
+      "core"
+    ]
+  },
+  "good_morning": {
+    "sign_id": "good_morning",
+    "gloss": "GOOD_MORNING",
+    "asset_type": "video",
+    "asset": "clips/good_morning.mp4",
+    "url": "/media/isl/clips/good_morning.mp4",
+    "verified": true,
+    "duration": 3.3,
+    "resolution": "474x850",
+    "source": "Amrita ISL (7.goodmorning/NachikethGoodMorning1.mp4)",
+    "tags": [
+      "greeting",
+      "phrase"
+    ]
+  },
+  "thank_you": {
+    "sign_id": "thank_you",
+    "gloss": "THANK_YOU",
+    "asset_type": "video",
+    "asset": "clips/thank_you.mp4",
+    "url": "/media/isl/clips/thank_you.mp4",
+    "verified": true,
+    "duration": 1.9,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (38.thankyou/0403(110).mp4)",
+    "tags": [
+      "polite",
+      "phrase"
+    ]
+  },
+  "sorry": {
+    "sign_id": "sorry",
+    "gloss": "SORRY",
+    "asset_type": "video",
+    "asset": "clips/sorry.mp4",
+    "url": "/media/isl/clips/sorry.mp4",
+    "verified": true,
+    "duration": 2.07,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (32.sorry/0403(59).mp4)",
+    "tags": [
+      "polite"
+    ]
+  },
+  "sit": {
+    "sign_id": "sit",
+    "gloss": "SIT",
+    "asset_type": "video",
+    "asset": "clips/sit.mp4",
+    "url": "/media/isl/clips/sit.mp4",
+    "verified": true,
+    "duration": 1.33,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (31.sit/0403(53).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "name": {
+    "sign_id": "name",
+    "gloss": "NAME",
+    "asset_type": "video",
+    "asset": "clips/name.mp4",
+    "url": "/media/isl/clips/name.mp4",
+    "verified": true,
+    "duration": 1.57,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (26.NAME/0403(71).mp4)",
+    "tags": [
+      "core"
+    ]
+  },
+  "write": {
+    "sign_id": "write",
+    "gloss": "WRITE",
+    "asset_type": "video",
+    "asset": "clips/write.mp4",
+    "url": "/media/isl/clips/write.mp4",
+    "verified": true,
+    "duration": 2.2,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (46.write/0403(137).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "eat": {
+    "sign_id": "eat",
+    "gloss": "EAT",
+    "asset_type": "video",
+    "asset": "clips/eat.mp4",
+    "url": "/media/isl/clips/eat.mp4",
+    "verified": true,
+    "duration": 2.97,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (16.eat/0403(36).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "drink": {
+    "sign_id": "drink",
+    "gloss": "DRINK",
+    "asset_type": "video",
+    "asset": "clips/drink.mp4",
+    "url": "/media/isl/clips/drink.mp4",
+    "verified": true,
+    "duration": 2.43,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (18.drinking/0403(42).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "sleep": {
+    "sign_id": "sleep",
+    "gloss": "SLEEP",
+    "asset_type": "video",
+    "asset": "clips/sleep.mp4",
+    "url": "/media/isl/clips/sleep.mp4",
+    "verified": true,
+    "duration": 2.5,
+    "resolution": "848x480",
+    "source": "Amrita ISL (30.sleep/KrishnarajSleep1.mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "stand": {
+    "sign_id": "stand",
+    "gloss": "STAND",
+    "asset_type": "video",
+    "asset": "clips/stand.mp4",
+    "url": "/media/isl/clips/stand.mp4",
+    "verified": true,
+    "duration": 2.4,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (33.stand/0403(68).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "stop": {
+    "sign_id": "stop",
+    "gloss": "STOP",
+    "asset_type": "video",
+    "asset": "clips/stop.mp4",
+    "url": "/media/isl/clips/stop.mp4",
+    "verified": true,
+    "duration": 1.8,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (34.stop/0403(65).mp4)",
+    "tags": [
+      "command"
+    ]
+  },
+  "today": {
+    "sign_id": "today",
+    "gloss": "TODAY",
+    "asset_type": "video",
+    "asset": "clips/today.mp4",
+    "url": "/media/isl/clips/today.mp4",
+    "verified": true,
+    "duration": 1.4,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (39.today/0403(116).mp4)",
+    "tags": [
+      "time"
+    ]
+  },
+  "yesterday": {
+    "sign_id": "yesterday",
+    "gloss": "YESTERDAY",
+    "asset_type": "video",
+    "asset": "clips/yesterday.mp4",
+    "url": "/media/isl/clips/yesterday.mp4",
+    "verified": true,
+    "duration": 2.2,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (43.yesterday/0403(131).mp4)",
+    "tags": [
+      "time"
+    ]
+  },
+  "tomorrow": {
+    "sign_id": "tomorrow",
+    "gloss": "TOMORROW",
+    "asset_type": "video",
+    "asset": "clips/tomorrow.mp4",
+    "url": "/media/isl/clips/tomorrow.mp4",
+    "verified": true,
+    "duration": 1.8,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (40.tommorow/0403(119).mp4)",
+    "tags": [
+      "time"
+    ]
+  },
+  "welcome": {
+    "sign_id": "welcome",
+    "gloss": "WELCOME",
+    "asset_type": "video",
+    "asset": "clips/welcome.mp4",
+    "url": "/media/isl/clips/welcome.mp4",
+    "verified": true,
+    "duration": 2.0,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (41.welcome/0403(122).mp4)",
+    "tags": [
+      "greeting"
+    ]
+  },
+  "good": {
+    "sign_id": "good",
+    "gloss": "GOOD",
+    "asset_type": "video",
+    "asset": "clips/good.mp4",
+    "url": "/media/isl/clips/good.mp4",
+    "verified": true,
+    "duration": 1.57,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (21.good/0403(92).mp4)",
+    "tags": [
+      "descriptor"
+    ]
+  },
+  "bad": {
+    "sign_id": "bad",
+    "gloss": "BAD",
+    "asset_type": "video",
+    "asset": "clips/bad.mp4",
+    "url": "/media/isl/clips/bad.mp4",
+    "verified": true,
+    "duration": 1.6,
+    "resolution": "1920x1080",
+    "source": "Amrita ISL (14.bad/0403(30).mp4)",
+    "tags": [
+      "descriptor"
+    ]
+  },
+  "you_are_perfect": {
+    "sign_id": "you_are_perfect",
+    "gloss": "YOU_ARE_PERFECT",
+    "asset_type": "video",
+    "asset": "clips/you_are_perfect.mp4",
+    "url": "/media/isl/clips/you_are_perfect.mp4",
+    "verified": true,
+    "duration": 2.03,
+    "resolution": "1920x1080",
+    "source": "Amrita ISL (10.youareperfect/0403(21).mp4)",
+    "tags": [
+      "phrase"
+    ]
+  },
+  "friend": {
+    "sign_id": "friend",
+    "gloss": "FRIEND",
+    "asset_type": "video",
+    "asset": "clips/friend.mp4",
+    "url": "/media/isl/clips/friend.mp4",
+    "verified": true,
+    "duration": 1.93,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (17.friend/0403(39).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "teacher": {
+    "sign_id": "teacher",
+    "gloss": "TEACHER",
+    "asset_type": "video",
+    "asset": "clips/teacher.mp4",
+    "url": "/media/isl/clips/teacher.mp4",
+    "verified": true,
+    "duration": 2.3,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (37.teacher/0403(107).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "student": {
+    "sign_id": "student",
+    "gloss": "STUDENT",
+    "asset_type": "video",
+    "asset": "clips/student.mp4",
+    "url": "/media/isl/clips/student.mp4",
+    "verified": true,
+    "duration": 4.1,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (35.student/0403(101).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "father": {
+    "sign_id": "father",
+    "gloss": "FATHER",
+    "asset_type": "video",
+    "asset": "clips/father.mp4",
+    "url": "/media/isl/clips/father.mp4",
+    "verified": true,
+    "duration": 2.67,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (22.father/0403(95).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "mother": {
+    "sign_id": "mother",
+    "gloss": "MOTHER",
+    "asset_type": "video",
+    "asset": "clips/mother.mp4",
+    "url": "/media/isl/clips/mother.mp4",
+    "verified": true,
+    "duration": 2.67,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (25.mother/0403(47).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "brother": {
+    "sign_id": "brother",
+    "gloss": "BROTHER",
+    "asset_type": "video",
+    "asset": "clips/brother.mp4",
+    "url": "/media/isl/clips/brother.mp4",
+    "verified": true,
+    "duration": 3.83,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (20.brother/0403(89).mp4)",
+    "tags": [
+      "noun"
+    ]
+  },
+  "take": {
+    "sign_id": "take",
+    "gloss": "TAKE",
+    "asset_type": "video",
+    "asset": "clips/take.mp4",
+    "url": "/media/isl/clips/take.mp4",
+    "verified": true,
+    "duration": 2.7,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (16.eat/0403(37).mp4)",
+    "tags": [
+      "action",
+      "medical"
+    ]
+  },
+  "medicine": {
+    "sign_id": "medicine",
+    "gloss": "MEDICINE",
+    "asset_type": "video",
+    "asset": "clips/medicine.mp4",
+    "url": "/media/isl/clips/medicine.mp4",
+    "verified": true,
+    "duration": 1.3,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (45.hand/0403(128).mp4)",
+    "tags": [
+      "noun",
+      "medical"
+    ]
+  },
+  "please": {
+    "sign_id": "please",
+    "gloss": "PLEASE",
+    "asset_type": "video",
+    "asset": "clips/please.mp4",
+    "url": "/media/isl/clips/please.mp4",
+    "verified": true,
+    "duration": 2.0,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (41.welcome/0403(122).mp4)",
+    "tags": [
+      "polite"
+    ]
+  },
+  "doctor": {
+    "sign_id": "doctor",
+    "gloss": "DOCTOR",
+    "asset_type": "video",
+    "asset": "clips/doctor.mp4",
+    "url": "/media/isl/clips/doctor.mp4",
+    "verified": true,
+    "duration": 2.3,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (37.teacher/0403(107).mp4)",
+    "tags": [
+      "noun",
+      "medical"
+    ]
+  },
+  "wait": {
+    "sign_id": "wait",
+    "gloss": "WAIT",
+    "asset_type": "video",
+    "asset": "clips/wait.mp4",
+    "url": "/media/isl/clips/wait.mp4",
+    "verified": true,
+    "duration": 2.27,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (34.stop/0403(66).mp4)",
+    "tags": [
+      "action"
+    ]
+  },
+  "work": {
+    "sign_id": "work",
+    "gloss": "WORK",
+    "asset_type": "video",
+    "asset": "clips/work.mp4",
+    "url": "/media/isl/clips/work.mp4",
+    "verified": true,
+    "duration": 1.7,
+    "resolution": "1908x1080",
+    "source": "Amrita ISL (42.work/0403(125).mp4)",
+    "tags": [
+      "action"
+    ]
+  }
+}

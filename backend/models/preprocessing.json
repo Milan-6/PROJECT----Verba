@@ -1,0 +1,20 @@
+{
+  "mediapipe": {
+    "static_image_mode": false,
+    "max_num_hands": 2,
+    "min_detection_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "justification": "Standard real-time video tracking with temporal landmark smoothing."
+  },
+  "normalization": {
+    "anchor": "wrist (landmark 0) translation to origin",
+    "scale_reference": "shoulder width (pose 11 to 12) with eye distance fallback",
+    "per_hand_per_frame": true
+  },
+  "missing_hand_strategy": "zero-fill with presence flags in indices [0:2]",
+  "sequence_length": 30,
+  "frame_feature_dim": 270,
+  "window_feature_dim": 1322,
+  "fps_resample": 30,
+  "features": "mean/std/delta of 270 frame features + mean/std of limb velocity & acceleration"
+}

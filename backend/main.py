@@ -19,6 +19,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ValidationError, field_validator
 from gloss import to_isl_gloss, build_sentence, lookup_assets
+from nlp_pipeline import EnglishToSignPipeline, SignAssetRegistry
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(ROOT, "..", "assets")
@@ -60,6 +61,14 @@ except Exception as e:  # missing model or onnxruntime
     print(f"[model] recognition disabled: {e}")
 
 
+# ---- NLP Pipeline & Sign Registry ----
+nlp_pipe = EnglishToSignPipeline()
+
+
+class EnglishToSignRequest(BaseModel):
+    text: str
+
+
 class FrameMsg(BaseModel):
     v: list[float]
 
@@ -73,7 +82,32 @@ class FrameMsg(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"ok": True, "model": RECOGNIZER_OK, "scenarios": sorted(f[:-5] for f in os.listdir(VOCAB_DIR) if f.endswith(".json"))}
+    return {
+        "ok": True,
+        "model": RECOGNIZER_OK,
+        "scenarios": sorted(f[:-5] for f in os.listdir(VOCAB_DIR) if f.endswith(".json")),
+        "registry_signs": len(nlp_pipe.registry.all_signs()),
+    }
+
+
+@app.get("/api/signs")
+def list_signs():
+    return JSONResponse({
+        "count": len(nlp_pipe.registry.all_signs()),
+        "signs": nlp_pipe.registry.all_signs(),
+        "registry": nlp_pipe.registry._registry,
+    })
+
+
+@app.post("/api/english-to-sign")
+def english_to_sign(req: EnglishToSignRequest):
+    text = req.text.strip()
+    if not text:
+        return JSONResponse(status_code=400, content={"error": "Text cannot be empty"})
+    if len(text) > 1000:
+        return JSONResponse(status_code=400, content={"error": "Text exceeds maximum length of 1000 characters"})
+    result = nlp_pipe.translate(text)
+    return JSONResponse(result)
 
 
 @app.get("/vocab/{name}")
@@ -121,12 +155,50 @@ async def session(ws: WebSocket, scenario: str = Query("hospital")):
                     await ws.send_json({"type": "candidate", "gloss": r[1], "confidence": r[2]})
 
             elif t == "text_in":
-                text = str(msg.get("text", ""))[:300]
+                text = str(msg.get("text", ""))[:500]
                 lang = msg.get("lang", "en")
-                glosses = to_isl_gloss(text, set(vocab["all"]))
-                items, fs = lookup_assets(glosses, index)
-                await ws.send_json({"type": "sign_sequence", "text": text, "lang": lang,
-                                    "glosses": glosses, "items": items, "fingerspell": fs})
+
+                # Full NLP pipeline & asset resolution
+                pipe_res = nlp_pipe.translate(text)
+
+                # Build items for frontend player (supports both video clips and fingerspelling fallback)
+                items = []
+                for s in pipe_res["isl"].get("signs", []):
+                    g = s["gloss"]
+                    matching_asset = next((a for a in pipe_res["realization"]["assets"] if a["sign_id"] == s["sign_id"]), None)
+                    if matching_asset:
+                        items.append({
+                            "gloss": g,
+                            "clip": matching_asset["url"],
+                            "duration": matching_asset["duration"],
+                            "letters": None,
+                            "role": s.get("role"),
+                        })
+                    else:
+                        letters = [c for c in g.replace("_", " ").lower() if c.isalpha() or c == " "]
+                        items.append({
+                            "gloss": g,
+                            "clip": None,
+                            "duration": None,
+                            "letters": letters,
+                            "role": s.get("role"),
+                        })
+
+                await ws.send_json({
+                    "type": "sign_sequence",
+                    "text": text,
+                    "lang": lang,
+                    "glosses": [s["gloss"] for s in pipe_res["isl"].get("signs", [])],
+                    "items": items,
+                    "fingerspell": pipe_res["missing_concepts"],
+                    "translation_status": pipe_res["translation_status"],
+                    "available_signs": pipe_res["available_signs"],
+                    "missing_concepts": pipe_res["missing_concepts"],
+                    "assets": pipe_res["realization"]["assets"],
+                    "semantic": pipe_res["semantic"],
+                    "isl": pipe_res["isl"],
+                    "fallback_text": pipe_res["fallback_text"],
+                })
 
             elif t == "build_sentence":
                 glosses = [str(g) for g in msg.get("glosses", [])][:12]

@@ -1,24 +1,46 @@
 {
  "classes": [
-  "ABSOLUTE_CINEMA",
+  "BAD",
+  "BOY",
+  "BROTHER",
   "BYE",
   "DAYS",
+  "DRINK",
+  "EAT",
+  "FATHER",
   "FEVER",
+  "FRIEND",
+  "GIRL",
+  "GOOD",
+  "GOOD_MORNING",
   "HELLO",
   "HELP",
   "HOW_ARE_YOU",
   "I_AM_FINE",
+  "MOTHER",
+  "NAME",
   "NO",
   "NONE",
   "PAIN",
   "PLEASE",
+  "SIT",
+  "SLEEP",
   "SORRY",
+  "STAND",
+  "STOP",
+  "THANK_YOU",
+  "TODAY",
   "TWO",
-  "YES"
+  "WELCOME",
+  "WORK",
+  "WRITE",
+  "YES",
+  "YESTERDAY",
+  "YOU_ARE_PERFECT"
  ],
- "n_sequences": 546,
+ "n_sequences": 901,
  "random_split": {
-  "acc": 0.990909090909091,
-  "macro_f1": 0.9913804713804715
+  "acc": 0.8784530386740331,
+  "macro_f1": 0.8704048538607362
  }
 }

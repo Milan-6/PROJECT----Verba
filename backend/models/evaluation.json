@@ -1,0 +1,337 @@
+{
+  "validation_strategy": "Leave-One-Signer-Out (LOSO)",
+  "loso_mean_accuracy": 0.774,
+  "loso_macro_f1": 0.7424,
+  "num_folds": 7,
+  "total_test_samples": 385,
+  "zero_signer_overlap_verified": true,
+  "folds": {
+    "krishnaraj": {
+      "held_out_signer": "krishnaraj",
+      "train_samples": 2523,
+      "val_samples": 60,
+      "accuracy": 0.7833,
+      "macro_f1": 0.6978,
+      "zero_overlap_verified": true
+    },
+    "manideep": {
+      "held_out_signer": "manideep",
+      "train_samples": 2529,
+      "val_samples": 58,
+      "accuracy": 0.7586,
+      "macro_f1": 0.6273,
+      "zero_overlap_verified": true
+    },
+    "nachiketh": {
+      "held_out_signer": "nachiketh",
+      "train_samples": 2622,
+      "val_samples": 27,
+      "accuracy": 0.9259,
+      "macro_f1": 0.8756,
+      "zero_overlap_verified": true
+    },
+    "signer_0403": {
+      "held_out_signer": "signer_0403",
+      "train_samples": 2520,
+      "val_samples": 61,
+      "accuracy": 0.7541,
+      "macro_f1": 0.7374,
+      "zero_overlap_verified": true
+    },
+    "signer_dash": {
+      "held_out_signer": "signer_dash",
+      "train_samples": 2541,
+      "val_samples": 54,
+      "accuracy": 0.8519,
+      "macro_f1": 0.8131,
+      "zero_overlap_verified": true
+    },
+    "signer_num": {
+      "held_out_signer": "signer_num",
+      "train_samples": 2406,
+      "val_samples": 99,
+      "accuracy": 0.7273,
+      "macro_f1": 0.6348,
+      "zero_overlap_verified": true
+    },
+    "signer_under": {
+      "held_out_signer": "signer_under",
+      "train_samples": 2625,
+      "val_samples": 26,
+      "accuracy": 0.6923,
+      "macro_f1": 0.5587,
+      "zero_overlap_verified": true
+    }
+  },
+  "weak_spots": [
+    {
+      "class": "BOY",
+      "accuracy": 0.6,
+      "samples": 15,
+      "confused_with": [
+        [
+          "DRINK",
+          2
+        ],
+        [
+          "GIRL",
+          2
+        ],
+        [
+          "BAD",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "BROTHER",
+      "accuracy": 0.8,
+      "samples": 15,
+      "confused_with": [
+        [
+          "BAD",
+          1
+        ],
+        [
+          "BOY",
+          1
+        ],
+        [
+          "GIRL",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "EAT",
+      "accuracy": 0.786,
+      "samples": 14,
+      "confused_with": [
+        [
+          "FRIEND",
+          1
+        ],
+        [
+          "HELP",
+          1
+        ],
+        [
+          "MOTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "FATHER",
+      "accuracy": 0.533,
+      "samples": 15,
+      "confused_with": [
+        [
+          "GOOD",
+          2
+        ],
+        [
+          "MOTHER",
+          2
+        ],
+        [
+          "BROTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "FRIEND",
+      "accuracy": 0.467,
+      "samples": 15,
+      "confused_with": [
+        [
+          "DRINK",
+          1
+        ],
+        [
+          "MOTHER",
+          1
+        ],
+        [
+          "SIT",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "GIRL",
+      "accuracy": 0.667,
+      "samples": 15,
+      "confused_with": [
+        [
+          "BAD",
+          1
+        ],
+        [
+          "BOY",
+          1
+        ],
+        [
+          "FATHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "GOOD_MORNING",
+      "accuracy": 0.5,
+      "samples": 12,
+      "confused_with": [
+        [
+          "GOOD",
+          3
+        ],
+        [
+          "HELLO",
+          3
+        ]
+      ]
+    },
+    {
+      "class": "HELLO",
+      "accuracy": 0.6,
+      "samples": 15,
+      "confused_with": [
+        [
+          "SIT",
+          2
+        ],
+        [
+          "DRINK",
+          1
+        ],
+        [
+          "GOOD_MORNING",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "HELP",
+      "accuracy": 0.733,
+      "samples": 15,
+      "confused_with": [
+        [
+          "BAD",
+          1
+        ],
+        [
+          "FRIEND",
+          1
+        ],
+        [
+          "MOTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "MOTHER",
+      "accuracy": 0.667,
+      "samples": 15,
+      "confused_with": [
+        [
+          "EAT",
+          4
+        ],
+        [
+          "FATHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "NAME",
+      "accuracy": 0.667,
+      "samples": 15,
+      "confused_with": [
+        [
+          "MOTHER",
+          3
+        ],
+        [
+          "DRINK",
+          1
+        ],
+        [
+          "GOOD",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "THANK_YOU",
+      "accuracy": 0.733,
+      "samples": 15,
+      "confused_with": [
+        [
+          "WELCOME",
+          4
+        ]
+      ]
+    },
+    {
+      "class": "WRITE",
+      "accuracy": 0.667,
+      "samples": 15,
+      "confused_with": [
+        [
+          "FRIEND",
+          1
+        ],
+        [
+          "STAND",
+          1
+        ],
+        [
+          "STOP",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "YESTERDAY",
+      "accuracy": 0.6,
+      "samples": 15,
+      "confused_with": [
+        [
+          "HELLO",
+          2
+        ],
+        [
+          "MOTHER",
+          2
+        ],
+        [
+          "BROTHER",
+          1
+        ]
+      ]
+    },
+    {
+      "class": "YOU_ARE_PERFECT",
+      "accuracy": 0.786,
+      "samples": 14,
+      "confused_with": [
+        [
+          "DRINK",
+          1
+        ],
+        [
+          "FATHER",
+          1
+        ],
+        [
+          "GIRL",
+          1
+        ]
+      ]
+    }
+  ]
+}

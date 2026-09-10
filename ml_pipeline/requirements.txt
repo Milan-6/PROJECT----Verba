@@ -1,7 +1,7 @@
-numpy
-opencv-python
-mediapipe>=0.10.14
-torch
-onnx
-onnxruntime
-matplotlib
+numpy==2.5.3
+opencv-python==5.0.0
+mediapipe==1.0.1
+torch==2.14.0+cpu
+onnxruntime==1.29.0
+scikit-learn==1.9.0
+matplotlib==3.11.1

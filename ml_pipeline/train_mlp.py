@@ -16,7 +16,7 @@ from __future__ import annotations
 import argparse, glob, json, os, sys, time
 import numpy as np
 import torch, torch.nn as nn
-from features import window_features, augment, WINDOW_DIM, FRAME_DIM
+from features import window_features, augment, WINDOW_DIM, FRAME_DIM, WINDOW_T
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -172,14 +172,77 @@ def main():
     # ---- 3) final model on ALL data -> ONNX ---------------------------------
     print("\n[final] training on all signers for deployment")
     Xall, yall = build(seqs, labels, label_to_idx, args.aug, rng)
-    model, mu, sd, _, _, _, _ = run_split(Xall, yall, Xall[:64], yall[:64], n_cls, args.epochs, args.seed, quiet=True)
+    model, mu, sd, train_acc, train_f1, _, _ = run_split(Xall, yall, Xall[:64], yall[:64], n_cls, args.epochs, args.seed, quiet=True)
     os.makedirs(args.out, exist_ok=True)
     onnx_path = os.path.join(args.out, "model.onnx")
     dummy = torch.zeros(1, WINDOW_DIM)
     torch.onnx.export(model, dummy, onnx_path, input_names=["x"], output_names=["logits"],
                       dynamic_axes={"x": {0: "batch"}, "logits": {0: "batch"}}, opset_version=17, dynamo=False)
+
+    # 1. Labels and class mappings
     json.dump(glosses, open(os.path.join(args.out, "labels.json"), "w"), indent=1)
+    class_to_idx = {g: i for i, g in enumerate(glosses)}
+    idx_to_class = {i: g for i, g in enumerate(glosses)}
+    json.dump(class_to_idx, open(os.path.join(args.out, "class_to_index.json"), "w"), indent=2)
+    json.dump(idx_to_class, open(os.path.join(args.out, "index_to_class.json"), "w"), indent=2)
+
+    # 2. Scaler
     json.dump({"mean": mu.tolist(), "std": sd.tolist()}, open(os.path.join(args.out, "scaler.json"), "w"))
+
+    # 3. Preprocessing configuration
+    preprocessing_config = {
+        "sequence_length": WINDOW_T,
+        "frame_feature_dim": FRAME_DIM,
+        "window_feature_dim": WINDOW_DIM,
+        "normalization": "body_scale_and_mean_std",
+        "fps_resample": 30,
+        "feature_composition": {
+            "presence_flags": 2,
+            "body_normalised_landmarks": 140,
+            "limb_vectors": 128,
+            "window_statistics": "mean, std, delta, vel_mean, vel_std, acc_mean, acc_std",
+        },
+    }
+    json.dump(preprocessing_config, open(os.path.join(args.out, "preprocessing.json"), "w"), indent=2)
+
+    # 4. Training configuration
+    training_config = {
+        "seed": args.seed,
+        "epochs": args.epochs,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "optimizer": "Adam",
+        "loss_function": "CrossEntropyLoss(label_smoothing=0.05)",
+        "augmentation_factor": args.aug,
+        "num_classes": n_cls,
+        "num_sequences": len(seqs),
+        "classes": glosses,
+        "device": "cpu",
+    }
+    json.dump(training_config, open(os.path.join(args.out, "training_config.json"), "w"), indent=2)
+
+    # 5. Evaluation metrics
+    eval_results = {
+        "train_accuracy": float(acc_r),
+        "validation_accuracy": float(acc_h if args.holdout else acc_r),
+        "macro_f1": float(f1_h if args.holdout else f1_r),
+        "random_split": report.get("random_split", {}),
+        "held_out": report.get("held_out", {}),
+    }
+    json.dump(eval_results, open(os.path.join(args.out, "evaluation.json"), "w"), indent=2)
+
+    # 6. Commit configuration
+    commit_config = {
+        "thresh": 0.65,
+        "consec": 2,
+        "stride": 3,
+        "smooth": 2,
+        "refractory_s": 0.4,
+        "classes": n_cls,
+    }
+    json.dump(commit_config, open(os.path.join(args.out, "commit.json"), "w"), indent=2)
+
+    # 7. Report
     json.dump(report, open(os.path.join(args.out, "report.json"), "w"), indent=1)
 
     # verify ONNX == PyTorch
@@ -192,6 +255,7 @@ def main():
     print(f"[export] {onnx_path}  max |onnx - torch| = {np.abs(out - ref).max():.2e}")
     t0 = time.time(); [sess.run(None, {"x": xs[:1]}) for _ in range(100)]
     print(f"[export] inference {(time.time() - t0) * 10:.2f} ms / sample on CPU")
+    print(f"[export] Saved all artifacts to {args.out}")
 
 
 if __name__ == "__main__":
