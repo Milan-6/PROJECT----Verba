@@ -1,0 +1,23 @@
+# --- dependencies / caches ---
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# --- MediaPipe landmark models (13 MB, downloaded automatically on first run) ---
+ml_pipeline/models/*.task
+frontend/public/mediapipe/*.task
+
+# --- scratch ---
+*.log
+.vscode/
+.idea/
+
+# NOTE: these ARE committed on purpose, so a teammate can clone and run immediately:
+#   backend/models/model.onnx + labels.json + scaler.json   (1.5 MB trained recognizer)
+#   frontend/dist/                                          (built UI, so run.bat needs no npm)
+#   frontend/public/mediapipe/wasm/                         (offline MediaPipe runtime)
+#   ml_pipeline/data/**/*.npy                               (the recorded ISL dataset, ~10 MB)

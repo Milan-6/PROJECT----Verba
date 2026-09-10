@@ -1,0 +1,16 @@
+{
+ "classes": [
+  "DAYS",
+  "FEVER",
+  "NO",
+  "NONE",
+  "PAIN",
+  "TWO",
+  "YES"
+ ],
+ "n_sequences": 306,
+ "random_split": {
+  "acc": 1.0,
+  "macro_f1": 1.0
+ }
+}

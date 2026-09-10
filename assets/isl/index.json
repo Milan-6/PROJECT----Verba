@@ -1,0 +1,16 @@
+{
+  "_readme": "Map GLOSS -> clip file (relative to assets/isl). Record 1-2 s WebM/MP4 clips of each sign, plain background, then list them here. Missing glosses are fingerspelled automatically.",
+  "PAIN": "clips/pain.webm",
+  "FEVER": "clips/fever.webm",
+  "DOCTOR": "clips/doctor.webm",
+  "PLEASE": "clips/please.webm",
+  "WAIT": "clips/wait.webm",
+  "INSURANCE_CARD": "clips/insurance_card.webm",
+  "IDENTIFICATION": "clips/identification.webm",
+  "PASSWORD": "clips/password.webm",
+  "SIGNATURE": "clips/signature.webm",
+  "RECEIPT": "clips/receipt.webm",
+  "WITHDRAW": "clips/withdraw.webm",
+  "DAYS": "clips/days.webm",
+  "ALLERGY": "clips/allergy.webm"
+}
