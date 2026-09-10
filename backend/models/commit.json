@@ -1,0 +1,11 @@
+{
+ "thresh": 0.65,
+ "consec": 1,
+ "measured": {
+  "live_accuracy": 0.789,
+  "silent_rate": 0.209,
+  "idle_false_fires": 0,
+  "classes": 15,
+  "holdout": "bhargav"
+ }
+}

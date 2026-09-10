@@ -1,4 +1,4 @@
-# SignBridge
+# Vebra
 
 **Two-way Indian Sign Language communication assistant for hospital receptions and bank counters.**
 JOYXoR 2K26 · Problem Statement 5 · communication assistant, not a translator.
@@ -64,7 +64,7 @@ python evaluate.py --holdout priya
 
 ### Method (from the IIT-Madras thesis *Sign Language Translation*, Sridhar 2019)
 
-| Thesis | SignBridge |
+| Thesis | Vebra |
 |---|---|
 | Skeletal keypoints per frame (OpenPose), face ignored | Hands 21×2 + upper-body pose (MediaPipe, in-browser) |
 | **Limbs** = vectors between adjacent joints: 4 arm limbs, 4 per finger | Same: 4 arm limbs (2-D) + 40 finger limbs (3-D) |
@@ -103,7 +103,9 @@ ml_pipeline/mp_extract.py        MediaPipe Tasks wrapper (downloads .task models
 ml_pipeline/collect_data.py      webcam -> data/<GLOSS>/<signer>_<n>.npy (30, 270)
 ml_pipeline/preprocess_video.py  INCLUDE / phone clips -> same format
 ml_pipeline/train_mlp.py         PyTorch MLP, signer-held-out validation, ONNX export + verification
-ml_pipeline/evaluate.py          idle false-fire test, live-style accuracy, confusion matrix
+ml_pipeline/evaluate.py          idle false-fire test, per-sign accuracy, writes redo.bat for weak signs
+ml_pipeline/calibrate.py         sweeps the confidence threshold on YOUR data -> backend/models/commit.json
+frontend/src/styles.css          THE design system: every colour, type, motion token lives here
 frontend/src/App.tsx             two-panel app: I sign / I speak-type, scenario + language switch
 frontend/src/components/         CameraPanel, CandidateCard, SentenceStrip, HearingInput, SignPlayer, TopBar
 frontend/src/hooks/              useCamera, useLandmarks, useSocket, useSpeech
@@ -124,6 +126,8 @@ server → client   hello {model,vocab,presets,clips} · candidate {gloss,confid
 
 Recorded by one signer in ~15 minutes: 306 sequences across 7 classes
 (NONE 120, PAIN 33, FEVER 32, TWO 31, DAYS 30, YES 30, NO 30).
+The vocabulary has since grown past 12 classes — see `backend/models/report.json` for the
+current run, and `weak.json` for per-sign live accuracy.
 
 | Metric | Result | Why it matters |
 |---|---|---|
@@ -144,3 +148,18 @@ TypeScript compiles clean · Vite production build OK · backend WebSocket exerc
 
 ## Honest limits
 ~35–40 signs per scenario, recognised as isolated signs with the signer confirming each one. No continuous signing, no facial grammar, no regional ISL variants. Real deployment needs co-design with Deaf users and ISL interpreters.
+
+
+---
+
+## Design system
+
+`frontend/src/styles.css` is the single source of visual truth. An eleven-step neutral ramp
+(pure white -> charcoal -> true black), a type scale with all headings explicitly bold, spacing,
+radii, shadows, and one easing curve with three durations. Components consume tokens only, so the
+whole product re-skins from that one block.
+
+Four things stay chromatic on purpose, because they carry meaning rather than style: the
+hand-tracking chip (green / amber / grey), the camera-error overlay, the connection dot, and the
+EMERGENCY button. Every animation is wrapped in `prefers-reduced-motion: reduce` — a Deaf user is
+visually scanning for the recognised word, and motion competes for that attention.

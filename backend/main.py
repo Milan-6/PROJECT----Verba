@@ -1,5 +1,5 @@
 """
-SignBridge backend — FastAPI + native WebSocket.
+Vebra backend — FastAPI + native WebSocket.
 
   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
@@ -25,7 +25,7 @@ ASSETS = os.path.join(ROOT, "..", "assets")
 VOCAB_DIR = os.path.join(ROOT, "vocab")
 FRAME_DIM = 270
 
-app = FastAPI(title="SignBridge")
+app = FastAPI(title="Vebra")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 if os.path.isdir(ASSETS):
     app.mount("/media", StaticFiles(directory=ASSETS), name="media")  # NOT /assets: the built frontend already uses /assets/*

@@ -1,7 +1,7 @@
 import type { Lang } from './types';
 
 const en = {
-  appName: 'SignBridge',
+  appName: 'Vebra',
   tagline: 'Indian Sign Language communication assistant',
   hospital: 'Hospital', bank: 'Bank',
   emergency: 'EMERGENCY',
@@ -19,7 +19,7 @@ const en = {
   quality: { good: 'Both hands tracked', 'one-hand': 'One hand tracked', 'no-hands': 'Show your hands', 'too-far': 'Come closer to the camera' },
 };
 const hi: typeof en = {
-  appName: 'SignBridge',
+  appName: 'Vebra',
   tagline: 'भारतीय सांकेतिक भाषा संचार सहायक',
   hospital: 'अस्पताल', bank: 'बैंक',
   emergency: 'आपातकाल',

@@ -14,7 +14,9 @@ import { Pt } from '../lib/features';
 
 const HAND_CONN: [number, number][] = [[0, 1], [1, 2], [2, 3], [3, 4], [0, 5], [5, 6], [6, 7], [7, 8], [0, 9], [9, 10], [10, 11], [11, 12], [0, 13], [13, 14], [14, 15], [15, 16], [0, 17], [17, 18], [18, 19], [19, 20], [5, 9], [9, 13], [13, 17]];
 const QUALITY_TEXT: Record<Quality, string> = { good: 'Tracking: both hands', 'one-hand': 'Tracking: one hand', 'no-hands': 'Show your hands', 'too-far': 'Come closer' };
-const QUALITY_COLOR: Record<Quality, string> = { good: '#22c55e', 'one-hand': '#f59e0b', 'no-hands': '#9ca3af', 'too-far': '#f59e0b' };
+// Kept chromatic on purpose: these encode tracking state a Deaf user acts on.
+// Values are the muted --ok / --warn / --c-silver tokens from styles.css.
+const QUALITY_COLOR: Record<Quality, string> = { good: '#15803d', 'one-hand': '#a16207', 'no-hands': '#a1a1aa', 'too-far': '#a16207' };
 
 interface Props {
   active: boolean;                       // camera on/off (controlled by the parent's button)
@@ -51,7 +53,7 @@ export default function CameraPanel({ active, paused = false, onVector, onQualit
       for (const p of h) { g.beginPath(); g.arc(...P(p), 3, 0, Math.PI * 2); g.fill(); }
     }
     if (f.pose) {
-      g.strokeStyle = '#38bdf8'; g.lineWidth = 2;
+      g.strokeStyle = 'rgba(255,255,255,.85)'; g.lineWidth = 2;
       for (const [a, b] of [[11, 12], [11, 13], [13, 15], [12, 14], [14, 16]] as [number, number][]) {
         g.beginPath(); g.moveTo(...P(f.pose[a])); g.lineTo(...P(f.pose[b])); g.stroke();
       }
@@ -78,7 +80,7 @@ export default function CameraPanel({ active, paused = false, onVector, onQualit
           {modelStatus === 'loading' ? 'Loading hand model…' : modelStatus === 'error' ? 'Model failed to load' : cam.status === 'on' ? QUALITY_TEXT[quality] : cam.status === 'starting' ? 'Starting camera…' : 'Camera off'}
         </span>
       </div>
-      <div className="camera-stage" style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', background: '#0b1220', borderRadius: 12, overflow: 'hidden' }}>
+      <div className="camera-stage" style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', borderRadius: 14, overflow: 'hidden' }}>
         {/* mirrored so signing feels natural; the canvas is mirrored with it so overlays line up */}
         <video ref={video} playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />
         <canvas ref={canvas} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', transform: 'scaleX(-1)', pointerEvents: 'none' }} />

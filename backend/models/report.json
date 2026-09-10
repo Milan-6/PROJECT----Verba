@@ -1,16 +1,24 @@
 {
  "classes": [
+  "ABSOLUTE_CINEMA",
+  "BYE",
   "DAYS",
   "FEVER",
+  "HELLO",
+  "HELP",
+  "HOW_ARE_YOU",
+  "I_AM_FINE",
   "NO",
   "NONE",
   "PAIN",
+  "PLEASE",
+  "SORRY",
   "TWO",
   "YES"
  ],
- "n_sequences": 306,
+ "n_sequences": 546,
  "random_split": {
-  "acc": 1.0,
-  "macro_f1": 1.0
+  "acc": 0.990909090909091,
+  "macro_f1": 0.9913804713804715
  }
 }

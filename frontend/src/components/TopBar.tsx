@@ -9,7 +9,7 @@ export default function TopBar({ scenario, lang, conn, onScenario, onLang, onEme
   const t = STR[lang];
   return (
     <header className="topbar">
-      <div className="brand"><span className="logo">SB</span><div><b>{t.appName}</b><small>{t.tagline}</small></div></div>
+      <div className="brand"><span className="logo" aria-hidden="true">V</span><div><b>{t.appName}</b><small>{t.tagline}</small></div></div>
       <div className="seg" role="tablist">
         <button role="tab" aria-selected={scenario === 'hospital'} className={scenario === 'hospital' ? 'on' : ''} onClick={() => onScenario('hospital')}><HeartPulse size={18} /> {t.hospital}</button>
         <button role="tab" aria-selected={scenario === 'bank'} className={scenario === 'bank' ? 'on' : ''} onClick={() => onScenario('bank')}><Building2 size={18} /> {t.bank}</button>

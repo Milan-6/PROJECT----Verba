@@ -1,0 +1,111 @@
+{
+ "holdout": "bhargav",
+ "threshold": 0.85,
+ "live_accuracy": 0.789,
+ "idle_false_fires": 0,
+ "classes": [
+  {
+   "gloss": "HELLO",
+   "samples": 30,
+   "acc": 0.033,
+   "silent": 0.967,
+   "confused_with": []
+  },
+  {
+   "gloss": "DAYS",
+   "samples": 30,
+   "acc": 0.567,
+   "silent": 0.433,
+   "confused_with": []
+  },
+  {
+   "gloss": "BYE",
+   "samples": 30,
+   "acc": 0.633,
+   "silent": 0.367,
+   "confused_with": []
+  },
+  {
+   "gloss": "TWO",
+   "samples": 31,
+   "acc": 0.645,
+   "silent": 0.355,
+   "confused_with": []
+  },
+  {
+   "gloss": "NO",
+   "samples": 30,
+   "acc": 0.767,
+   "silent": 0.233,
+   "confused_with": []
+  },
+  {
+   "gloss": "I_AM_FINE",
+   "samples": 30,
+   "acc": 0.833,
+   "silent": 0.167,
+   "confused_with": []
+  },
+  {
+   "gloss": "YES",
+   "samples": 30,
+   "acc": 0.867,
+   "silent": 0.133,
+   "confused_with": []
+  },
+  {
+   "gloss": "FEVER",
+   "samples": 32,
+   "acc": 0.906,
+   "silent": 0.094,
+   "confused_with": []
+  },
+  {
+   "gloss": "PAIN",
+   "samples": 33,
+   "acc": 0.909,
+   "silent": 0.091,
+   "confused_with": []
+  },
+  {
+   "gloss": "PLEASE",
+   "samples": 30,
+   "acc": 0.933,
+   "silent": 0.067,
+   "confused_with": []
+  },
+  {
+   "gloss": "HELP",
+   "samples": 30,
+   "acc": 0.967,
+   "silent": 0.033,
+   "confused_with": []
+  },
+  {
+   "gloss": "HOW_ARE_YOU",
+   "samples": 30,
+   "acc": 0.967,
+   "silent": 0.0,
+   "confused_with": [
+    {
+     "gloss": "SORRY",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "gloss": "ABSOLUTE_CINEMA",
+   "samples": 30,
+   "acc": 1.0,
+   "silent": 0.0,
+   "confused_with": []
+  },
+  {
+   "gloss": "SORRY",
+   "samples": 30,
+   "acc": 1.0,
+   "silent": 0.0,
+   "confused_with": []
+  }
+ ]
+}
