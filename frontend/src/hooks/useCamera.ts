@@ -38,6 +38,9 @@ export function useCamera(videoRef: React.RefObject<HTMLVideoElement>) {
       const video: MediaTrackConstraints = id
         ? { deviceId: { exact: id }, width: { ideal: 960 }, height: { ideal: 540 } }
         : { facingMode: 'user', width: { ideal: 960 }, height: { ideal: 540 } };
+      if (!navigator?.mediaDevices?.getUserMedia) {
+        throw new Error('Camera is blocked because this page is not HTTPS. Use the installed VERBA Android app, or allow this origin in chrome://flags/#unsafely-treat-insecure-origin-as-secure');
+      }
       let s: MediaStream;
       try {
         s = await navigator.mediaDevices.getUserMedia({ video, audio: false });

@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'VERBA',
   webDir: 'dist',
   server: {
-    androidScheme: 'https',
+    androidScheme: 'http',
     cleartext: true
   }
 };

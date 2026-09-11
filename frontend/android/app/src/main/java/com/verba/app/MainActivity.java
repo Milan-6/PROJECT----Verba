@@ -45,6 +45,7 @@ public class MainActivity extends BridgeActivity {
             settings.setAllowFileAccess(true);
             settings.setAllowContentAccess(true);
             settings.setDatabaseEnabled(true);
+            settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
 
             // 3. Set custom WebChromeClient to reliably grant camera & audio permissions to WebView
             webView.setWebChromeClient(new BridgeWebChromeClient(this.bridge) {
