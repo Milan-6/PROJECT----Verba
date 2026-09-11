@@ -19,7 +19,12 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ValidationError, field_validator
 from gloss import to_isl_gloss, build_sentence, lookup_assets
-from nlp_pipeline import EnglishToSignPipeline, SignAssetRegistry
+from nlp_pipeline import EnglishToSignPipeline, SignAssetRegistry, is_sentence_fully_supported
+from scenario_routing import (
+    resolve_scenario_requirements,
+    resolve_dataset_for_scenario,
+    generate_scenario_manifest,
+)
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(ROOT, "..", "assets")
@@ -31,6 +36,9 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 if os.path.isdir(ASSETS):
     app.mount("/media", StaticFiles(directory=ASSETS), name="media")  # NOT /assets: the built frontend already uses /assets/*
 
+# ---- NLP Pipeline & Sign Registry ----
+nlp_pipe = EnglishToSignPipeline()
+
 
 def load_vocab(name: str) -> dict:
     path = os.path.join(VOCAB_DIR, f"{name}.json")
@@ -38,6 +46,11 @@ def load_vocab(name: str) -> dict:
         name, path = "hospital", os.path.join(VOCAB_DIR, "hospital.json")
     v = json.load(open(path, encoding="utf-8"))
     v["all"] = v["core"] + v["glosses"]
+    # Video-gating: Only keep sentences where 100% of glosses resolve to physical video assets
+    raw_presets = v.get("presets", [])
+    v["presets"] = [p for p in raw_presets if is_sentence_fully_supported(p, scenario=name, pipeline=nlp_pipe)]
+    raw_quick = v.get("quick_phrases", [])
+    v["quick_phrases"] = [q for q in raw_quick if is_sentence_fully_supported(q, scenario=name, pipeline=nlp_pipe)]
     return v
 
 
@@ -61,12 +74,9 @@ except Exception as e:  # missing model or onnxruntime
     print(f"[model] recognition disabled: {e}")
 
 
-# ---- NLP Pipeline & Sign Registry ----
-nlp_pipe = EnglishToSignPipeline()
-
-
 class EnglishToSignRequest(BaseModel):
     text: str
+    scenario: str | None = None
 
 
 class FrameMsg(BaseModel):
@@ -99,6 +109,27 @@ def list_signs():
     })
 
 
+@app.get("/api/scenarios/manifest")
+def scenario_manifest():
+    return JSONResponse(generate_scenario_manifest(VOCAB_DIR))
+
+
+@app.get("/api/scenarios/{name}/requirements")
+def scenario_requirements(name: str):
+    try:
+        return JSONResponse(resolve_scenario_requirements(name, VOCAB_DIR))
+    except FileNotFoundError:
+        return JSONResponse(status_code=404, content={"error": f"Scenario '{name}' not found"})
+
+
+@app.get("/api/scenarios/{name}/dataset-plan")
+def scenario_dataset_plan(name: str):
+    try:
+        return JSONResponse(resolve_dataset_for_scenario(name, VOCAB_DIR))
+    except FileNotFoundError:
+        return JSONResponse(status_code=404, content={"error": f"Scenario '{name}' not found"})
+
+
 @app.post("/api/english-to-sign")
 def english_to_sign(req: EnglishToSignRequest):
     text = req.text.strip()
@@ -106,14 +137,21 @@ def english_to_sign(req: EnglishToSignRequest):
         return JSONResponse(status_code=400, content={"error": "Text cannot be empty"})
     if len(text) > 1000:
         return JSONResponse(status_code=400, content={"error": "Text exceeds maximum length of 1000 characters"})
-    result = nlp_pipe.translate(text)
+    result = nlp_pipe.translate(text, scenario=req.scenario)
     return JSONResponse(result)
 
 
 @app.get("/vocab/{name}")
 def vocab(name: str):
     v = load_vocab(name)
-    return JSONResponse({k: v[k] for k in ("scenario", "core", "glosses", "presets", "theme")})
+    return JSONResponse({
+        "scenario": v["scenario"],
+        "core": v["core"],
+        "glosses": v["glosses"],
+        "presets": v["presets"],
+        "quick_phrases": v.get("quick_phrases", []),
+        "theme": v.get("theme", name),
+    })
 
 
 @app.websocket("/ws/session")
@@ -122,8 +160,17 @@ async def session(ws: WebSocket, scenario: str = Query("hospital")):
     vocab = load_vocab(scenario)
     index = load_index()
     rec = SignRecognizer() if RECOGNIZER_OK else None
-    await ws.send_json({"type": "hello", "model": RECOGNIZER_OK, "scenario": vocab["scenario"],
-                        "vocab": vocab["all"], "presets": vocab["presets"], "clips": sorted(index)})
+    reqs = resolve_scenario_requirements(vocab["scenario"], VOCAB_DIR)
+    await ws.send_json({
+        "type": "hello",
+        "model": RECOGNIZER_OK,
+        "scenario": vocab["scenario"],
+        "vocab": vocab["all"],
+        "presets": vocab["presets"],
+        "quick_phrases": vocab.get("quick_phrases", []),
+        "clips": sorted(index),
+        "requirements": reqs,
+    })
     last_frame_t = 0.0
     try:
         while True:
@@ -157,39 +204,18 @@ async def session(ws: WebSocket, scenario: str = Query("hospital")):
             elif t == "text_in":
                 text = str(msg.get("text", ""))[:500]
                 lang = msg.get("lang", "en")
+                scen = msg.get("scenario", vocab.get("scenario", "hospital"))
 
-                # Full NLP pipeline & asset resolution
-                pipe_res = nlp_pipe.translate(text)
-
-                # Build items for frontend player (supports both video clips and fingerspelling fallback)
-                items = []
-                for s in pipe_res["isl"].get("signs", []):
-                    g = s["gloss"]
-                    matching_asset = next((a for a in pipe_res["realization"]["assets"] if a["sign_id"] == s["sign_id"]), None)
-                    if matching_asset:
-                        items.append({
-                            "gloss": g,
-                            "clip": matching_asset["url"],
-                            "duration": matching_asset["duration"],
-                            "letters": None,
-                            "role": s.get("role"),
-                        })
-                    else:
-                        letters = [c for c in g.replace("_", " ").lower() if c.isalpha() or c == " "]
-                        items.append({
-                            "gloss": g,
-                            "clip": None,
-                            "duration": None,
-                            "letters": letters,
-                            "role": s.get("role"),
-                        })
+                # Full Phase 20 NLP pipeline & pre-validated asset resolution (zero 404s)
+                pipe_res = nlp_pipe.translate(text, scenario=scen)
 
                 await ws.send_json({
                     "type": "sign_sequence",
                     "text": text,
                     "lang": lang,
+                    "scenario": scen,
                     "glosses": [s["gloss"] for s in pipe_res["isl"].get("signs", [])],
-                    "items": items,
+                    "items": pipe_res["items"],
                     "fingerspell": pipe_res["missing_concepts"],
                     "translation_status": pipe_res["translation_status"],
                     "available_signs": pipe_res["available_signs"],
@@ -207,10 +233,15 @@ async def session(ws: WebSocket, scenario: str = Query("hospital")):
                 await ws.send_json({"type": "sentence", "text": text, "source": source, "glosses": glosses})
 
             elif t == "scenario":
-                vocab = load_vocab(str(msg.get("value", "hospital")))
-                if rec: rec.reset()
+                val = str(msg.get("value", "hospital"))
+                vocab = load_vocab(val)
+                if rec:
+                    rec.reset()
+                reqs = resolve_scenario_requirements(vocab["scenario"], VOCAB_DIR)
                 await ws.send_json({"type": "hello", "model": RECOGNIZER_OK, "scenario": vocab["scenario"],
-                                    "vocab": vocab["all"], "presets": vocab["presets"], "clips": sorted(index)})
+                                    "vocab": vocab["all"], "presets": vocab["presets"], "clips": sorted(index),
+                                    "requirements": reqs})
+
 
             elif t == "reset":
                 if rec: rec.reset()

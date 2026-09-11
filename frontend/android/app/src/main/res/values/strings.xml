@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">VERBA</string>
+    <string name="title_activity_main">VERBA</string>
+    <string name="package_name">com.verba.app</string>
+    <string name="custom_url_scheme">com.verba.app</string>
+</resources>

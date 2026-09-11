@@ -15,6 +15,8 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REGISTRY_PATH = os.path.join(ROOT, "sign_registry.json")
+ASSETS_DIR = os.path.join(ROOT, "..", "assets")
+VOCAB_DIR = os.path.join(ROOT, "vocab")
 
 # ----------------- Normalization dictionaries & mappings -----------------
 CONTRACTIONS = {
@@ -116,6 +118,9 @@ PHRASE_MAPPINGS = {
     "how are you": "HOW_ARE_YOU",
     "i am fine": "I_AM_FINE",
     "you are perfect": "YOU_ARE_PERFECT",
+    "take care of yourself": "TAKE_CARE",
+    "take care": "TAKE_CARE",
+    "nice to meet you": "NICE_TO_MEET_YOU",
     "insurance card": "INSURANCE_CARD",
     "id proof": "ID_PROOF",
     "chip card": "CHIP_CARD",
@@ -179,7 +184,7 @@ class SemanticParser:
     """Extracts structured intent, question type, grammatical roles, and negation."""
 
     @staticmethod
-    def parse(normalized_text: str) -> Dict[str, Any]:
+    def parse(normalized_text: str, scenario: Optional[str] = None) -> Dict[str, Any]:
         raw = normalized_text.strip()
         is_q = raw.endswith("?") or any(raw.startswith(w + " ") for w in WH_WORDS | MODAL_QUESTIONS)
         cleaned = raw.rstrip("?").strip()
@@ -222,10 +227,31 @@ class SemanticParser:
 
         known_actions = {
             "help", "take", "eat", "drink", "sleep", "sit", "stand", "stop", "write", "wait",
-            "see", "give", "show", "have", "need", "withdraw", "deposit", "feel", "register"
+            "see", "give", "show", "have", "need", "withdraw", "deposit", "feel", "register",
+            "arrive", "depart", "buy", "pay", "verify", "submit", "apply", "collect"
         }
-        known_subjects = {"doctor", "patient", "i", "you", "we", "he", "she", "they", "name"}
-        known_objects = {"medicine", "water", "card", "receipt", "document", "pain", "fever", "cash", "pin", "password"}
+        known_subjects = {"doctor", "patient", "driver", "conductor", "officer", "passenger", "i", "you", "we", "he", "she", "they", "name"}
+        known_objects = {
+            "medicine", "water", "card", "receipt", "document", "documents", "pain", "fever",
+            "cash", "pin", "password", "bus", "train", "ticket", "platform", "price", "bill",
+            "form", "certificate", "token", "seat"
+        }
+
+        # Advisory scenario context (biases lexicon without altering semantic ground truth)
+        if scenario:
+            sc_path = os.path.join(VOCAB_DIR, f"{scenario}.json")
+            if os.path.isfile(sc_path):
+                try:
+                    with open(sc_path, "r", encoding="utf-8") as f:
+                        sc_data = json.load(f)
+                    for g in sc_data.get("glosses", []):
+                        gl = g.lower()
+                        if gl in {"arrive", "depart", "cancel", "confirm", "buy", "pay", "submit", "verify"}:
+                            known_actions.add(gl)
+                        else:
+                            known_objects.add(gl)
+                except Exception:
+                    pass
 
         GREETINGS_SET = {"hello", "good_morning", "welcome", "bye", "hi", "hey"}
         PRONOUNS_SET = {"i", "you", "me", "we", "us", "he", "she", "they", "them", "my", "your", "our", "their", "his", "her", "this", "that"}
@@ -396,6 +422,155 @@ class SignAssetRegistry:
     def all_signs(self) -> List[str]:
         return sorted(self._registry.keys())
 
+    def resolve_asset(self, gloss: str) -> Optional[Dict[str, Any]]:
+        """
+        Resolves gloss to verified physical asset.
+        Priority:
+        1. Exact verified match (registry or index) with verified file on disk
+        2. Verified alias / lemma match with verified file on disk
+        3. Repo-specific equivalent with verified file on disk
+        Returns dict with match_tier or None.
+        """
+        if not gloss or not isinstance(gloss, str):
+            return None
+        g_clean = gloss.strip().upper()
+        g_lower = g_clean.lower()
+
+        # Helper to validate file on disk
+        def _valid_clip(asset_rel: str) -> bool:
+            if not asset_rel or ".." in asset_rel:
+                return False
+            ext = os.path.splitext(asset_rel)[1].lower()
+            if ext not in (".mp4", ".webm", ".mov"):
+                return False
+            full_p = os.path.join(ASSETS_DIR, "isl", asset_rel)
+            return os.path.isfile(full_p) and os.access(full_p, os.R_OK)
+
+        # 1. Tier 1: Exact verified asset in registry
+        entry = self.get(g_lower)
+        if entry and entry.get("verified") and _valid_clip(entry.get("asset", "")):
+            return {**entry, "match_tier": "exact"}
+
+        # Check assets/isl/index.json for exact gloss
+        idx_path = os.path.join(ASSETS_DIR, "isl", "index.json")
+        if os.path.isfile(idx_path):
+            try:
+                with open(idx_path, "r", encoding="utf-8") as f:
+                    idx = json.load(f)
+                if g_clean in idx and _valid_clip(idx[g_clean]):
+                    return {
+                        "sign_id": g_lower,
+                        "gloss": g_clean,
+                        "asset_type": "video",
+                        "asset": idx[g_clean],
+                        "url": f"/media/isl/{idx[g_clean]}",
+                        "verified": True,
+                        "duration": 1.5,
+                        "match_tier": "exact",
+                    }
+            except Exception:
+                pass
+
+        # 2. Tier 2: Verified alias / lemma
+        alias = SYNONYMS.get(g_lower) or LEMMAS.get(g_lower)
+        if alias:
+            alias_entry = self.get(alias)
+            if alias_entry and alias_entry.get("verified") and _valid_clip(alias_entry.get("asset", "")):
+                tier = "lemma" if g_lower in LEMMAS else "verified_alias"
+                return {**alias_entry, "match_tier": tier, "original_gloss": g_clean}
+
+        # 3. Tier 3: Repo-specific equivalent
+        repo_equivalents = {
+            "WAITING": "wait",
+            "SEATED": "sit",
+            "STATION": "bus",
+            "HALT": "stop",
+        }
+        eq = repo_equivalents.get(g_clean)
+        if eq:
+            eq_entry = self.get(eq)
+            if eq_entry and eq_entry.get("verified") and _valid_clip(eq_entry.get("asset", "")):
+                return {**eq_entry, "match_tier": "repo_equivalent", "original_gloss": g_clean}
+
+        return None
+
+
+def resolve_isl_assets(
+    gloss_sequence: List[str],
+    scenario: Optional[str] = None,
+    registry: Optional[SignAssetRegistry] = None,
+    debug: bool = True,
+) -> List[Dict[str, Any]]:
+    """
+    Phase 20 English -> ISL Video Selection Engine.
+    Resolves each gloss to a real verified asset using strict priority order:
+    1. Exact verified asset
+    2. Verified alias
+    3. Repo-specific equivalent
+    4. Fingerspelling fallback
+    5. Explicit missing asset state
+
+    Pre-queue validation guarantees that NO 404 URL ever reaches the video player.
+    """
+    reg = registry or SignAssetRegistry()
+    queue: List[Dict[str, Any]] = []
+
+    for gloss in gloss_sequence:
+        g = str(gloss).strip().upper()
+        resolved = reg.resolve_asset(g)
+
+        if resolved and resolved.get("url"):
+            # Double check physical file exists before queuing
+            asset_path = os.path.join(ASSETS_DIR, "isl", resolved.get("asset", ""))
+            if os.path.isfile(asset_path):
+                queue.append({
+                    "gloss": g,
+                    "clip": resolved["url"],
+                    "duration": resolved.get("duration", 1.5),
+                    "letters": None,
+                    "match_tier": resolved.get("match_tier", "exact"),
+                    "sign_id": resolved.get("sign_id", g.lower()),
+                    "status": "supported",
+                })
+                continue
+
+        # Tier 4: Fingerspelling fallback
+        clean_text = g.replace("_", " ").lower()
+        letters = [c for c in clean_text if c.isalpha() or c == " "]
+        if letters:
+            queue.append({
+                "gloss": g,
+                "clip": None,
+                "duration": None,
+                "letters": letters,
+                "match_tier": "fingerspelling",
+                "sign_id": g.lower(),
+                "status": "fingerspell",
+            })
+        else:
+            # Tier 5: Explicit missing asset state
+            queue.append({
+                "gloss": g,
+                "clip": None,
+                "duration": None,
+                "letters": None,
+                "match_tier": "missing",
+                "sign_id": g.lower(),
+                "status": "unsupported",
+            })
+
+    # Dev debug logging
+    if debug:
+        print(f"[debug-pipeline] Scenario: {scenario or 'none'} | Gloss Sequence: {gloss_sequence}")
+        for item in queue:
+            dest = item["clip"] or (f"fingerspell: {''.join(item['letters'])}" if item["letters"] else "UNAVAILABLE")
+            print(f"  [resolve_isl_assets] {item['gloss']} -> {item['match_tier']} -> {dest}")
+        available_cnt = sum(1 for it in queue if it["clip"] is not None)
+        missing_cnt = len(queue) - available_cnt
+        print(f"[debug-pipeline] Queue length: {len(queue)} ({available_cnt} video clips, {missing_cnt} missing/fingerspell)")
+
+    return queue
+
 
 class EnglishToSignPipeline:
     """Full English -> Normalization -> Semantic IR -> ISL IR -> Verified Video Realization."""
@@ -404,30 +579,33 @@ class EnglishToSignPipeline:
         self.registry = registry or SignAssetRegistry()
         self._cache: Dict[str, Dict[str, Any]] = {}
 
-    def translate(self, text: str) -> Dict[str, Any]:
-        cache_key = text.strip().lower()
+    def translate(self, text: str, scenario: Optional[str] = None) -> Dict[str, Any]:
+        cache_key = f"{scenario or ''}:{text.strip().lower()}"
         if cache_key in self._cache:
             cached = self._cache[cache_key]
             # Fast path: re-verify assets through registry for security
-            resolved_assets = []
-            available_signs = []
-            missing_concepts = []
-            for item in cached["isl"].get("signs", []):
-                asset_info = self.registry.get(item["sign_id"])
-                if asset_info and asset_info.get("verified"):
-                    resolved_assets.append({
-                        "sign_id": asset_info["sign_id"],
-                        "gloss": asset_info["gloss"],
-                        "url": asset_info["url"],
-                        "duration": asset_info.get("duration", 1.5),
-                        "role": item.get("role"),
-                    })
-                    available_signs.append(asset_info["gloss"])
-                else:
-                    missing_concepts.append(item["gloss"])
+            queue_items = resolve_isl_assets(
+                [s["gloss"] for s in cached["isl"].get("signs", [])],
+                scenario=scenario,
+                registry=self.registry,
+                debug=False,
+            )
+            available_signs = [it["gloss"] for it in queue_items if it["clip"] is not None]
+            missing_concepts = [it["gloss"] for it in queue_items if it["clip"] is None]
+            assets = [
+                {
+                    "sign_id": it["sign_id"],
+                    "gloss": it["gloss"],
+                    "url": it["clip"],
+                    "duration": it.get("duration", 1.5),
+                }
+                for it in queue_items
+                if it["clip"] is not None
+            ]
             return {
                 **cached,
-                "realization": {"renderer": "video", "assets": resolved_assets},
+                "realization": {"renderer": "video", "assets": assets},
+                "items": queue_items,
                 "available_signs": available_signs,
                 "missing_concepts": missing_concepts,
             }
@@ -437,66 +615,58 @@ class EnglishToSignPipeline:
         if not normalized:
             return {
                 "source_text": text,
+                "scenario": scenario,
                 "normalized_text": "",
                 "translation_status": "unsupported",
                 "semantic": {},
                 "isl": {"signs": []},
                 "realization": {"renderer": "video", "assets": []},
+                "items": [],
                 "available_signs": [],
                 "missing_concepts": [],
                 "fallback_text": "No text provided.",
             }
 
-        # 2. Semantic Parsing
-        semantic = SemanticParser.parse(normalized)
+        # 2. Semantic Parsing with advisory scenario context
+        semantic = SemanticParser.parse(normalized, scenario=scenario)
 
         # 3. ISL IR Transformation
         isl_ir = IslTransformationLayer.transform(semantic, normalized)
 
-        # 4. Realization & Asset Resolution
+        # 4. Realization & Asset Resolution via Phase 20 Engine
+        raw_glosses = [s["gloss"] for s in isl_ir.get("signs", [])]
+        queue_items = resolve_isl_assets(raw_glosses, scenario=scenario, registry=self.registry, debug=True)
+
+        annotated_signs = []
         resolved_assets = []
         available_signs = []
         missing_concepts = []
-        annotated_signs = []
-        raw_words = re.findall(r"\w+", text.lower())
 
-        for item in isl_ir.get("signs", []):
-            sign_id = item["sign_id"]
-            gloss = item["gloss"]
+        for item in queue_items:
+            g = item["gloss"]
+            tier = item.get("match_tier", "missing")
+            sid = item.get("sign_id", g.lower())
 
-            # Lookup in registry
-            asset_info = self.registry.get(sign_id)
-            if asset_info and asset_info.get("verified"):
-                # Determine match_type tier
-                if any(rw in LEMMAS and LEMMAS[rw] == sign_id for rw in raw_words):
-                    match_type = "lemma"
-                elif any(rw in CURATED_SYNONYMS and CURATED_SYNONYMS[rw] == sign_id for rw in raw_words):
-                    match_type = "curated_synonym"
-                else:
-                    match_type = "exact"
-
+            if item["clip"] is not None:
                 annotated_signs.append({
-                    "sign_id": asset_info["sign_id"],
-                    "match_type": match_type,
-                    "gloss": asset_info["gloss"],
-                    "role": item.get("role"),
+                    "sign_id": sid,
+                    "match_type": tier,
+                    "gloss": g,
                 })
                 resolved_assets.append({
-                    "sign_id": asset_info["sign_id"],
-                    "gloss": asset_info["gloss"],
-                    "url": asset_info["url"],
-                    "duration": asset_info.get("duration", 1.5),
-                    "role": item.get("role"),
+                    "sign_id": sid,
+                    "gloss": g,
+                    "url": item["clip"],
+                    "duration": item.get("duration", 1.5),
                 })
-                available_signs.append(asset_info["gloss"])
+                available_signs.append(g)
             else:
                 annotated_signs.append({
-                    "sign_id": sign_id,
+                    "sign_id": sid,
                     "match_type": "unsupported",
-                    "gloss": gloss,
-                    "role": item.get("role"),
+                    "gloss": g,
                 })
-                missing_concepts.append(gloss)
+                missing_concepts.append(g)
 
         isl_ir["signs"] = annotated_signs
 
@@ -517,6 +687,7 @@ class EnglishToSignPipeline:
 
         res = {
             "source_text": text,
+            "scenario": scenario,
             "normalized_text": normalized,
             "translation_status": status,
             "semantic": semantic,
@@ -525,9 +696,38 @@ class EnglishToSignPipeline:
                 "renderer": "video",
                 "assets": resolved_assets,
             },
+            "items": queue_items,
             "available_signs": available_signs,
             "missing_concepts": missing_concepts,
             "fallback_text": fallback,
         }
         self._cache[cache_key] = res
         return res
+
+
+def is_sentence_fully_supported(
+    text: str,
+    scenario: Optional[str] = None,
+    pipeline: Optional[EnglishToSignPipeline] = None,
+) -> bool:
+    """
+    Video-gating predicate: returns True ONLY if 100% of the glosses in the
+    sentence resolve to real, verified video clips.
+    Sentences with partial matches, fingerspelling fallback, or missing signs return False.
+    """
+    if not text or not text.strip():
+        return False
+    pipe = pipeline or EnglishToSignPipeline()
+    res = pipe.translate(text, scenario=scenario)
+    if res.get("translation_status") != "supported":
+        return False
+    if res.get("missing_concepts"):
+        return False
+    items = res.get("items", [])
+    if not items:
+        return False
+    return all(
+        item.get("clip") is not None and item.get("match_tier") != "fingerspelling"
+        for item in items
+    )
+

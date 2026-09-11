@@ -2,19 +2,37 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Check, X } from 'lucide-react';
 import { STR } from '../i18n';
 import type { Lang } from '../types';
+import type { ModelStatus } from '../hooks/useLandmarks';
 
 interface Props {
   candidate: { gloss: string; confidence: number } | null;
   lang: Lang;
   modelReady: boolean;
+  visionModelStatus?: ModelStatus;
   onAdd: () => void;
   onDiscard: () => void;
 }
 
 const pretty = (g: string) => g.replace(/_/g, ' ');
 
-export default function CandidateCard({ candidate, lang, modelReady, onAdd, onDiscard }: Props) {
+export default function CandidateCard({ candidate, lang, modelReady, visionModelStatus, onAdd, onDiscard }: Props) {
   const t = STR[lang];
+  const isVisionLoading = visionModelStatus === 'loading';
+  const isVisionError = visionModelStatus === 'error';
+
+  const statusLabel = () => {
+    if (isVisionLoading) return 'Loading Model…';
+    if (isVisionError) return 'Model Load Failed';
+    if (modelReady) return t.listening;
+    return 'Model Offline';
+  };
+
+  const dotColor = () => {
+    if (isVisionLoading) return 'var(--amber)';
+    if (isVisionError) return 'var(--emergency, #dc2626)';
+    if (modelReady) return 'var(--ok, #2e7d32)';
+    return 'var(--ink-faint)';
+  };
 
   return (
     <div className="candidate-container" style={{ minHeight: '60px' }}>
@@ -38,13 +56,13 @@ export default function CandidateCard({ candidate, lang, modelReady, onAdd, onDi
             }}
           >
             <motion.span
-              animate={modelReady ? { scale: [1, 1.6, 1], opacity: [0.9, 0.35, 0.9] } : { opacity: 0.4 }}
-              transition={modelReady ? { duration: 2, repeat: Infinity, ease: 'easeInOut' } : undefined}
+              animate={modelReady ? { scale: [1, 1.6, 1], opacity: [0.9, 0.35, 0.9] } : isVisionLoading ? { scale: [1, 1.3, 1], opacity: [0.4, 0.9, 0.4] } : { opacity: 0.4 }}
+              transition={modelReady ? { duration: 2, repeat: Infinity, ease: 'easeInOut' } : isVisionLoading ? { duration: 1.2, repeat: Infinity, ease: 'easeInOut' } : undefined}
               style={{
                 width: 8,
                 height: 8,
                 borderRadius: '50%',
-                backgroundColor: modelReady ? 'var(--amber)' : 'var(--ink-faint)',
+                backgroundColor: dotColor(),
                 display: 'inline-block',
               }}
             />
@@ -57,9 +75,10 @@ export default function CandidateCard({ candidate, lang, modelReady, onAdd, onDi
                 color: 'var(--ink-muted)',
               }}
             >
-              {modelReady ? t.listening : 'Model Offline'}
+              {statusLabel()}
             </span>
           </motion.div>
+
         ) : (
           <motion.div
             key="live"

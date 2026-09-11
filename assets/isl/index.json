@@ -30,5 +30,16 @@
   "PLEASE": "clips/please.mp4",
   "DOCTOR": "clips/doctor.mp4",
   "WAIT": "clips/wait.mp4",
-  "WORK": "clips/work.mp4"
+  "WORK": "clips/work.mp4",
+  "PAIN": "clips/hurt.mp4",
+  "FEVER": "clips/fever.mp4",
+  "WATER": "clips/water.mp4",
+  "FOOD": "clips/food.mp4",
+  "COLD": "clips/cold.mp4",
+  "TIRED": "clips/tired.mp4",
+  "HUNGRY": "clips/hungry.mp4",
+  "ANGRY": "clips/angry.mp4",
+  "CONGRATULATIONS": "clips/congratulations.mp4",
+  "NICE_TO_MEET_YOU": "clips/nice_to_meet_you.mp4",
+  "TAKE_CARE": "clips/take_care.mp4"
 }

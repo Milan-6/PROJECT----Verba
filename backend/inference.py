@@ -19,6 +19,8 @@ import onnxruntime as ort
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ml_pipeline"))
 from features import window_features, WINDOW_T, FRAME_DIM  # noqa: E402
 
+from scenario_routing import verify_runtime_compatibility, EXPECTED_WINDOW_DIM  # noqa: E402
+
 MODELS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models")
 # Defaults. models/commit.json (written by ml_pipeline/calibrate.py) overrides them:
 # the right threshold depends on how many classes you trained, so it is measured, not guessed.
@@ -28,6 +30,8 @@ STRIDE, THRESH, CONSEC, REFRACTORY_S, SMOOTH = 3, 0.75, 2, 0.4, 2
 class SignRecognizer:
     def __init__(self, model_dir: str = MODELS, thresh: float | None = None,
                  consec: int | None = None, smooth: int | None = None, stride: int | None = None):
+        # Strict Phase 20 runtime compatibility check
+        verify_runtime_compatibility(model_dir, expected_feature_dim=EXPECTED_WINDOW_DIM)
         self.sess = ort.InferenceSession(os.path.join(model_dir, "model.onnx"), providers=["CPUExecutionProvider"])
         self.labels: list[str] = json.load(open(os.path.join(model_dir, "labels.json")))
         sc = json.load(open(os.path.join(model_dir, "scaler.json")))

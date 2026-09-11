@@ -151,9 +151,32 @@ button, input, select, textarea {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .topbar {
+    padding: var(--s-3) var(--s-3);
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
   .brand-wordmark { font-size: 21px; }
   .brand-tagline { display: none; }
+  .mode-tabs-container {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--s-4);
+    padding-bottom: var(--s-1);
+    scrollbar-width: none;
+  }
+  .mode-tabs-container::-webkit-scrollbar {
+    display: none;
+  }
+  .mode-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-height: 44px;
+  }
 }
 
 /* Mode Gliding Tabs (Hospital / Bank) */
@@ -564,7 +587,7 @@ button, input, select, textarea {
   word-wrap: break-word;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .recognized-sentence-display {
     font-size: 28px;
     min-height: 34px;
@@ -994,33 +1017,49 @@ button, input, select, textarea {
   letter-spacing: 0.04em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .foot {
     flex-direction: column;
     gap: var(--s-2);
     text-align: center;
+    padding: var(--s-3);
   }
-}
 
-/* ============================================================================
-   SECTION 8: RESPONSIVE COLLAPSE SPECIFICATION
-   Mobile reorders strictly by hierarchy:
-   1. Header
-   2. I SIGN / camera
-   3. Recognized sentence (Level 1)
-   4. I SPEAK / TYPE input
-   5. Shown to the Deaf person
-   6. Privacy + sign-count footnote
-   ========================================================================= */
-@media (max-width: 768px) {
   .workspace {
     grid-template-columns: 1fr;
-    padding: var(--s-4);
+    padding: var(--s-3);
     gap: var(--s-4);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .panel {
-    padding: var(--s-4);
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--s-3);
+  }
+
+  .quick-phrase-pill-btn,
+  .preset-phrase-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .camera-controls-bar {
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+
+  .hearing-input-form {
+    flex-wrap: wrap;
+  }
+
+  .hearing-input-form .text-input-field {
+    width: 100%;
+    flex: 1 1 100%;
   }
 }
 

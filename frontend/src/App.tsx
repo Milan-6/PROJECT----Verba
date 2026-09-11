@@ -11,11 +11,10 @@ import { useSocket } from './hooks/useSocket';
 import { useSpeech } from './hooks/useSpeech';
 import { STR } from './i18n';
 import type { Lang, Scenario, ServerMsg, SignItem, TranslationStatus } from './types';
-import type { Quality } from './hooks/useLandmarks';
-
-const saved = <T,>(k: string, d: T): T => { try { return (localStorage.getItem(k) as T) ?? d; } catch { return d; } };
+import type { Quality, ModelStatus } from './hooks/useLandmarks';
 
 export default function App() {
+  const saved = <T,>(k: string, d: T): T => { try { return (localStorage.getItem(k) as unknown as T) || d; } catch { return d; } };
   const [scenario, setScenario] = useState<Scenario>(saved('sb.scenario', 'hospital'));
   const [lang, setLang] = useState<Lang>(saved('sb.lang', 'en'));
   const t = STR[lang];
@@ -24,8 +23,10 @@ export default function App() {
 
   // server state
   const [modelReady, setModelReady] = useState(false);
+  const [visionModelStatus, setVisionModelStatus] = useState<ModelStatus>('loading');
   const [vocabSize, setVocabSize] = useState(0);
   const [presets, setPresets] = useState<string[]>([]);
+  const [quickPhrases, setQuickPhrases] = useState<string[]>([]);
 
   // Deaf -> hearing
   const [cameraOn, setCameraOn] = useState(false);
@@ -61,7 +62,12 @@ export default function App() {
 
   const onMessage = useCallback((m: ServerMsg) => {
     switch (m.type) {
-      case 'hello': setModelReady(m.model); setVocabSize(m.vocab.filter(g => g !== 'NONE' && g !== 'THUMBS_UP').length); setPresets(m.presets); break;
+      case 'hello':
+        setModelReady(m.model);
+        setVocabSize(m.vocab.filter(g => g !== 'NONE' && g !== 'THUMBS_UP').length);
+        setPresets(m.presets);
+        if ('quick_phrases' in m && Array.isArray(m.quick_phrases)) setQuickPhrases(m.quick_phrases);
+        break;
       case 'candidate':
         if (m.gloss === 'THUMBS_UP') { setCandidate(c => { if (c) setChips(x => [...x, c.gloss]); return null; }); break; }
         if (m.gloss === 'DONE') { setCandidate(null); if (chipsRef.current.length) requestSentence(chipsRef.current); break; }
@@ -141,7 +147,13 @@ export default function App() {
               {cameraOn ? <CameraOff size={15} /> : <Camera size={15} />} {cameraOn ? t.cameraOff : t.cameraOn}
             </button>
           </div>
-          <CameraPanel active={cameraOn} paused={pinFocused} onVector={onVector} onQuality={setQuality} />
+          <CameraPanel
+            active={cameraOn}
+            paused={pinFocused}
+            onVector={onVector}
+            onQuality={setQuality}
+            onModelStatusChange={setVisionModelStatus}
+          />
           {cameraOn && quality !== 'good' && (
             <div style={{ minHeight: '1.2em', fontFamily: 'var(--font-mono)', fontSize: '11px', color: 'var(--ink-muted)' }}>
               {t.quality[quality]}
@@ -151,6 +163,7 @@ export default function App() {
             candidate={candidate}
             lang={lang}
             modelReady={modelReady}
+            visionModelStatus={visionModelStatus}
             onAdd={() => { if (candidate) setChips(c => [...c, candidate.gloss]); setCandidate(null); }}
             onDiscard={() => setCandidate(null)}
           />
@@ -184,6 +197,7 @@ export default function App() {
           <HearingInput
             lang={lang}
             presets={presets}
+            quickPhrases={quickPhrases}
             disabled={status !== 'open'}
             onSend={text => {
               triggerCrossover('Generating ISL…');

@@ -35,6 +35,17 @@ interface Props {
   fallbackText?: string;
 }
 
+function resolveClip(clipUrl?: string | null): string {
+  if (!clipUrl) return '';
+  if (clipUrl.startsWith('http://') || clipUrl.startsWith('https://')) return clipUrl;
+  const backend = import.meta.env.VITE_BACKEND;
+  if (backend) {
+    const proto = location.protocol === 'https:' ? 'https' : 'http';
+    return `${proto}://${backend}${clipUrl.startsWith('/') ? '' : '/'}${clipUrl}`;
+  }
+  return clipUrl;
+}
+
 export default function SignPlayer({
   text,
   items,
@@ -85,8 +96,9 @@ export default function SignPlayer({
   // Preload next clip onto the inactive player
   useEffect(() => {
     if (nextItem && nextItem.clip && inactiveVideo) {
-      if (inactiveVideo.src !== nextItem.clip) {
-        inactiveVideo.src = nextItem.clip;
+      const src = resolveClip(nextItem.clip);
+      if (inactiveVideo.src !== src) {
+        inactiveVideo.src = src;
         inactiveVideo.preload = 'auto';
         inactiveVideo.load();
       }
@@ -98,8 +110,9 @@ export default function SignPlayer({
     if (!currentItem) return;
 
     if (currentItem.clip && activeVideo) {
-      if (activeVideo.src !== currentItem.clip) {
-        activeVideo.src = currentItem.clip;
+      const src = resolveClip(currentItem.clip);
+      if (activeVideo.src !== src) {
+        activeVideo.src = src;
         activeVideo.load();
       }
       activeVideo.playbackRate = playbackSpeed;

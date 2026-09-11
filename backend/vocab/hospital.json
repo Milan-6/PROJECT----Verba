@@ -48,12 +48,21 @@
   "APPOINTMENT"
  ],
  "presets": [
-  "Where does it hurt?",
-  "Since how many days?",
-  "Please show your insurance card",
-  "The doctor will see you now",
-  "Please take a seat",
-  "Do you have any allergy?"
+  "Please take medicine",
+  "Doctor please help",
+  "Take medicine today",
+  "Take medicine tomorrow",
+  "Please sit",
+  "Please wait",
+  "Please write your name"
+ ],
+ "quick_phrases": [
+  "Doctor please help",
+  "Please take medicine",
+  "Please sit",
+  "Please wait",
+  "Take care",
+  "Drink water"
  ],
  "theme": "hospital"
 }

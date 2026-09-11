@@ -1,39 +1,21 @@
 import { useState } from 'react';
-import { Mic, MicOff, Send, Building2, Stethoscope, Sparkles } from 'lucide-react';
+import { Mic, MicOff, Send, Sparkles, MessageSquareQuote } from 'lucide-react';
 import { STR } from '../i18n';
 import { useSpeech } from '../hooks/useSpeech';
 import type { Lang } from '../types';
 
 interface Props {
   lang: Lang;
-  presets: string[];
+  presets?: string[];
+  quickPhrases?: string[];
   disabled: boolean;
   onSend: (text: string) => void;
 }
 
-export const BANKING_QUICK_PHRASES = [
-  'Please enter your PIN',
-  'Sign here on the form',
-  'Please show your ID proof',
-  'Insert your chip card',
-  'How much do you want to withdraw?',
-  'Please collect your receipt',
-];
-
-export const HOSPITAL_QUICK_PHRASES = [
-  'Where does it hurt?',
-  'Since how many days?',
-  'Please show your insurance card',
-  'The doctor will see you now',
-  'Please take a seat',
-  'Do you have any allergy?',
-];
-
-export default function HearingInput({ lang, presets: _presets, disabled, onSend }: Props) {
+export default function HearingInput({ lang, presets = [], quickPhrases = [], disabled, onSend }: Props) {
   const t = STR[lang];
   const [text, setText] = useState('');
   const [err, setErr] = useState('');
-  const [activeTab, setActiveTab] = useState<'all' | 'bank' | 'hospital'>('all');
   const { listen, stopListening, listening, supported } = useSpeech();
 
   const submit = (s: string) => {
@@ -58,6 +40,9 @@ export default function HearingInput({ lang, presets: _presets, disabled, onSend
       m => setErr(m)
     );
   };
+
+  const hasQuickPhrases = Array.isArray(quickPhrases) && quickPhrases.length > 0;
+  const hasPresets = Array.isArray(presets) && presets.length > 0;
 
   return (
     <div className="hearing-panel-content" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-3)' }}>
@@ -102,121 +87,54 @@ export default function HearingInput({ lang, presets: _presets, disabled, onSend
         </div>
       )}
 
-      {/* Quick Phrases Section */}
-      <div className="quick-phrases-wrapper">
-        <div className="quick-phrases-toolbar">
-          <div className="quick-phrases-label">
+      {/* Feature 4: Scenario-Aware High-Frequency Quick Phrases (100% Video-Backed) */}
+      {hasQuickPhrases && (
+        <div className="quick-phrases-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-2)' }}>
+          <div className="quick-phrases-label" style={{ display: 'flex', alignItems: 'center', gap: 'var(--s-2)' }}>
             <Sparkles size={13} style={{ color: 'var(--amber)' }} />
-            <span>Target Quick Phrases (12)</span>
+            <span>{t.quickPhrases} ({quickPhrases.length})</span>
           </div>
-          <div className="quick-category-seg">
-            <button
-              type="button"
-              className={`quick-cat-btn ${activeTab === 'all' ? 'active' : ''}`}
-              onClick={() => setActiveTab('all')}
-            >
-              All (12)
-            </button>
-            <button
-              type="button"
-              className={`quick-cat-btn ${activeTab === 'bank' ? 'active' : ''}`}
-              onClick={() => setActiveTab('bank')}
-            >
-              <Building2 size={11} style={{ display: 'inline', marginRight: 4 }} />
-              Bank (6)
-            </button>
-            <button
-              type="button"
-              className={`quick-cat-btn ${activeTab === 'hospital' ? 'active' : ''}`}
-              onClick={() => setActiveTab('hospital')}
-            >
-              <Stethoscope size={11} style={{ display: 'inline', marginRight: 4 }} />
-              Hospital (6)
-            </button>
+          <div className="presets" style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
+            {quickPhrases.map(p => (
+              <button
+                key={p}
+                type="button"
+                className="quick-phrase-pill-btn"
+                disabled={disabled}
+                onClick={() => submit(p)}
+                title="Tap to translate to ISL video playback"
+              >
+                {p}
+              </button>
+            ))}
           </div>
         </div>
+      )}
 
-        {/* Grouped Banking Quick Phrases */}
-        {(activeTab === 'all' || activeTab === 'bank') && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-1)' }}>
-            {activeTab === 'all' && (
-              <span
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  color: 'var(--ink-muted)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 'var(--s-1)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
-                }}
-              >
-                <Building2 size={12} /> Banking / ATM
-              </span>
-            )}
-            <div className="presets" style={{ gap: 'var(--s-2)' }}>
-              {BANKING_QUICK_PHRASES.map(p => (
-                <button
-                  key={p}
-                  type="button"
-                  className="quick-phrase-pill-btn"
-                  disabled={disabled}
-                  onClick={() => submit(p)}
-                  title="Tap to translate to ISL video playback"
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
+      {/* Feature 3: Scenario Preset Suggestions (100% Video-Backed) */}
+      {hasPresets && (
+        <div className="suggested-sentences-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-2)' }}>
+          <div className="quick-phrases-label" style={{ display: 'flex', alignItems: 'center', gap: 'var(--s-2)' }}>
+            <MessageSquareQuote size={13} style={{ color: 'var(--ink-muted)' }} />
+            <span>{t.suggestedSentences} ({presets.length})</span>
           </div>
-        )}
-
-        {/* Grouped Hospital Quick Phrases */}
-        {(activeTab === 'all' || activeTab === 'hospital') && (
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 'var(--s-1)',
-              marginTop: activeTab === 'all' ? 'var(--s-2)' : '0',
-            }}
-          >
-            {activeTab === 'all' && (
-              <span
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  color: 'var(--ink-muted)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 'var(--s-1)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
-                }}
+          <div className="presets" style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--s-2)' }}>
+            {presets.map(p => (
+              <button
+                key={p}
+                type="button"
+                className="quick-phrase-pill-btn preset-phrase-btn"
+                disabled={disabled}
+                onClick={() => submit(p)}
+                title="Tap to translate to ISL video playback"
               >
-                <Stethoscope size={12} /> Hospital / Medical
-              </span>
-            )}
-            <div className="presets" style={{ gap: 'var(--s-2)' }}>
-              {HOSPITAL_QUICK_PHRASES.map(p => (
-                <button
-                  key={p}
-                  type="button"
-                  className="quick-phrase-pill-btn"
-                  disabled={disabled}
-                  onClick={() => submit(p)}
-                  title="Tap to translate to ISL video playback"
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
+                {p}
+              </button>
+            ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
+

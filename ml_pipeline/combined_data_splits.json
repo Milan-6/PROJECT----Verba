@@ -1,0 +1,5756 @@
+{
+  "amrita": {
+    "train_count": 256,
+    "val_count": 51,
+    "test_count": 78
+  },
+  "cslrt": {
+    "train": [
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0000.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0001.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0002.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0003.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/can i help you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0007.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/can i help you.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0008.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/cannot help.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0009.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0010.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0011.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0012.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0013.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0014.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0015.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0016.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0017.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0018.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0022.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0023.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0024.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0025.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0028.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/go and sleep (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0029.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/go and sleep.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0030.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0031.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0032.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0033.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0034.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0036.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0037.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0038.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0039.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0040.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0041.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/MVI_6500.MP4",
+        "saved_as": "cslrt_cslrt_signer_6500_0042.npy",
+        "signer": "cslrt_signer_6500"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0043.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0044.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0045.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0046.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/heshe is my friend.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0047.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/she is my friend.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0048.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0049.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0050.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0051.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0052.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0053.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0054.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0055.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0056.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0057.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0061.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0062.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0063.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0064.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0065.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0068.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0069.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0070.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0071.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0072.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0075.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0076.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0077.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0078.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0079.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/i am feeling cold (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0080.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/i am feeling cold.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0081.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0082.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0083.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0084.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0085.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0086.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0087.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0088.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0089.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0090.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0091.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0094.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0095.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0096.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0097.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0098.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0099.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0100.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0101.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0102.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0103.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0104.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0105.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0106.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0107.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0108.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/i am suffering from fever (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0109.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/i am suffering from fever.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0110.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/i am tired (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0111.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/i am tired.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0112.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0113.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0114.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0115.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0116.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0117.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0118.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0119.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0120.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0121.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0122.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0123.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0124.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0125.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0126.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0127.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0128.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0129.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0130.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0131.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/i got hurt (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0132.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/i got hurt.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0133.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0134.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0135.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0136.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0137.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0138.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0139.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0140.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0141.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0144.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0145.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0146.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0147.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0151.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0152.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0153.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0154.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0155.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/prepare the bed (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0156.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/prepare the bed.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0157.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0158.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0159.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0160.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0161.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve 1.MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0162.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve food.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0163.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve the food (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0164.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve the food.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0165.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0166.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0167.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0168.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0169.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0170.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0174.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0175.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0176.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0177.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0178.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/wear the shirt (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0179.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/wear the shirt.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0180.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0181.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0182.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0183.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0184.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0185.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/why are you angry (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0186.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/why are you angry.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0187.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0188.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0189.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0190.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0191.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad 1.MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0192.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0193.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/you are bad (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0194.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/you are bad.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0195.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0196.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0197.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0198.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0199.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0200.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/you are good (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0201.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/you are good.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0202.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0203.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0204.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0205.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0206.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0207.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/you are welcome (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0208.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/you are welcome.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0209.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0210.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0211.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0212.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0213.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0214.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/you need a medicine, take this one..mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0215.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/you need a medicine, take this one.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0216.npy",
+        "signer": "cslrt_signer_4"
+      }
+    ],
+    "val": [
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0004.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0019.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0026.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0035.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0058.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0066.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0073.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0092.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0142.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0148.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0171.npy",
+        "signer": "cslrt_signer_6"
+      }
+    ],
+    "test": [
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0005.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (8).MP4",
+        "saved_as": "cslrt_cslrt_signer_8_0006.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0020.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0021.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0027.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0059.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (8).MP4",
+        "saved_as": "cslrt_cslrt_signer_8_0060.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0067.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0074.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0093.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0143.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0149.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0150.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0172.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0173.npy",
+        "signer": "cslrt_signer_8"
+      }
+    ]
+  },
+  "combined": {
+    "train": [
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/manideepyouareperfect-2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/NachikethYouArePerfect3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect 3.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/NachikethYouArePerfect2.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect -1.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect 2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/manideepyouareperfect-1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You Are Perfect_1.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect 1.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/krishnarajbad2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad -1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad_3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad_2.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/krishnarajbad1.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/0403(31).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/manideepbad-1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad -3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/manideepbad-2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/0403(35).mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy_1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/manideepboy-1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/NachikethBoy1.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/0403(33).mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy_2.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/manideepboy-3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy -3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy -2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/0403(36).mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/manideepeat-3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/krishnarajeat1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/Eat_1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/krishnarajeat3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/Food1.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/krishnarajeat2.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/0403(37).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/Eat -2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/KrishnarajFriend3.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/NachikethFriend1.mov",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/manideepfriend-2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/manideepfriend-3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/0403(41).mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend_3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend_1.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend -1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/NachikethFriend2.mov",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend -2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/krishnarajdrink1.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/0403(44).mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/0403(42).mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drink 1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/manideepdrinking-2.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/manideepdrinking-3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/0403(43).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drink3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drinking -2.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drink_1.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/manideep girl-3.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/NachikethGirl1.mov",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/NachikethGirl3.mov",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/KrishnarajGirl3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/NachikethGirl2.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl_2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/manideep girl-1.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/0403(87).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/0403(86).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl_3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother_1.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/krishnarajBrother1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother 1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/krishnarajBrother3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother_3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/manideepbrother-3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother 2.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/0403(91).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother -1.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/manideepbrother-1.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/KrishnarajGood3.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/KrishnarajGood1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/GOOD 2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/Good -1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/KrishnarajGood2.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/GOOD 3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/Good -3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/0403(94).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/Good2.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/manideepgood-3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/manideepfather-2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/manideepfather-1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/0403(97).mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/KrishnarajFather2.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/NachikethFather2.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father -2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/0403(95).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father -3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/NachikethFather1.mov",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father_2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/NachikethHelp2.mov",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/KrishnarajHelp3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/manideephelp-3.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help_3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help1.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/KrishnarajHelp1.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help_1.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help_2.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/NachikethHelp3.mov",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help -2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/NachikethMother3.mov",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother_1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/KrishnarajMother2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother 1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother -3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/0403(49).mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/KrishnarajMother3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/NachikethMother2.mov",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother 2.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/0403(48).mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name -3.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name3.mov",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/manideepname-2.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name2.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/KrishnarajName3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/0403(71).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name1.mov",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name2.mov",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/0403(72).mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep2.mov",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/KrishnarajSleep2.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep -2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/manideepsleep-3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep_3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/manideepsleep-2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep3.mov",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep2.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep_1.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/KrishnarajSit1.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit3.mov",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit_1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit_3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/manideepsit-3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/0403(55).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit-3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit-2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/manideepsorry-2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/Sorry -2.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/SORRY 3.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/0403(61).mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/manideepsorry-3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/KrishnarajSorry2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/KrishnarajSorry3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/SORRY 1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/0403(60).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/0403(59).mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/KrishnarajStand1.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand 3(1).mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/manideepstand-3.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/0403(70).mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/STAND 1.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand1.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand2.mov",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/manideepstand-1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand -3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand1.mov",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/manideepstop-2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/KrishnarajStop1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/STOP 1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/manideepstop-3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/0403(66).mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop -2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop2.mov",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop 1(1).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/0403(65).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop1.mov",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/0403(111).mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/ThankYou1.mov",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/Thankyou -2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/0403(112).mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/ThankYou3.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/KrishnarajThankyou3.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/manideepthankyou-3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/0403(110).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/Thank you 3.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/THANKYOU 2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/Today -2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/manideeptoday-3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/Today 1(1).mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/TODAY 1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/Today2.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/Today -1.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/manideeptoday-2.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/krishnarajtoday_3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/krishnarajtoday_1.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/krishnarajtoday_2.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/WELCOME 2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/krishnarajwelcome_3.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/0403(122).mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/krishnarajwelcome_1.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/Welcome1.mov",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/Welcome2.mov",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/Welcome3.mov",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/WELCOME 1.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/0403(124).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/manideepwelcome-3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/WORK 2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/Work 2(1).mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/Work3.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/Work2.mov",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/krishnarajwork_3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/0403(126).mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/0403(127).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/krishnarajwork_2.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/Work1.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/manideepwork-3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/Yesterday 1(1).mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/YESTERDAY 1.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/krishnarajyesterday_1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/manideepyesterday-3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/YESTERDAY 2.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/Yesterday -2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/krishnarajyesterday_3.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/0403(132).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/0403(131).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/YESTERDAY 3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/manideepwrite-1.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/0403(138).mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/KrishnarajWrite2.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write2.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/WRITE 3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/WRITE 2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/0403(139).mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write 3(1).mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write3.mov",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write1.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/0403(12).mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/manideepgoodmorning-1.mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/0403(13).mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/NachikethGoodMorning3.mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/Good morning 2.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/manideepgoodmorning-3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/0403(14).mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/Good morning 3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/krishnarajhello_2.mp4",
+        "saved_as": "amrita_train_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/manideephello-2.mp4",
+        "saved_as": "amrita_train_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/0403(20).mp4",
+        "saved_as": "amrita_train_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/manideephello-3.mp4",
+        "saved_as": "amrita_train_3.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/0403(19).mp4",
+        "saved_as": "amrita_train_4.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/NachikethHello2.mp4",
+        "saved_as": "amrita_train_5.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/krishnarajhello_1.mp4",
+        "saved_as": "amrita_train_6.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello3.mp4",
+        "saved_as": "amrita_train_7.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello2.mp4",
+        "saved_as": "amrita_train_8.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello -3.mp4",
+        "saved_as": "amrita_train_9.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0000.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0001.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0002.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0003.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/can i help you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0007.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/can i help you.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0008.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/cannot help.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0009.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0010.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0011.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0012.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0013.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "can i help you/help.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0014.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0015.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0016.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0017.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0018.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0022.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0023.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0024.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0025.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0028.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/go and sleep (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0029.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/go and sleep.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0030.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0031.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0032.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0033.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0034.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0036.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0037.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0038.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0039.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0040.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "EAT",
+        "video_file": "had your food/food.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0041.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/MVI_6500.MP4",
+        "saved_as": "cslrt_cslrt_signer_6500_0042.npy",
+        "signer": "cslrt_signer_6500"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0043.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0044.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0045.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/friend.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0046.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/heshe is my friend.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0047.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FRIEND",
+        "video_file": "he she is my friend/she is my friend.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0048.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0049.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0050.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0051.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0052.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TODAY",
+        "video_file": "he would be coming today/today.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0053.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0054.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0055.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0056.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0057.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0061.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0062.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0063.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0064.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0065.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0068.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0069.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0070.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0071.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0072.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0075.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0076.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0077.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0078.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/cold.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0079.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/i am feeling cold (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0080.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "COLD",
+        "video_file": "i am feeling cold/i am feeling cold.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0081.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0082.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0083.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0084.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0085.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "I_AM_FINE",
+        "video_file": "i am fine. thank you sir/fine thank.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0086.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (1).mp4",
+        "saved_as": "cslrt_cslrt_signer_1_0087.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0088.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0089.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0090.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0091.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0094.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0095.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0096.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0097.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SIT",
+        "video_file": "i am sitting in the class/sitting.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0098.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0099.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0100.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0101.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0102.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SORRY",
+        "video_file": "i am so sorry to hear that/sorry hear.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0103.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0104.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0105.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0106.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0107.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/fever.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0108.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/i am suffering from fever (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0109.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FEVER",
+        "video_file": "i am suffering from fever/i am suffering from fever.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0110.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/i am tired (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0111.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/i am tired.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0112.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0113.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0114.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0115.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0116.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "TIRED",
+        "video_file": "i am tired/tired.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0117.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0118.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0119.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0120.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0121.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "YES",
+        "video_file": "i do not agree/agree.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0122.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0123.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0124.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0125.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NO",
+        "video_file": "i do not like it/hate.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0126.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0127.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0128.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0129.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0130.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/got hurt.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0131.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/i got hurt (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0132.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PAIN",
+        "video_file": "i got hurt/i got hurt.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0133.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0134.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0135.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "STOP",
+        "video_file": "i was stopped by some one/stopped.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0136.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0137.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0138.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0139.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0140.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0141.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0144.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0145.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0146.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0147.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0151.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0152.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0153.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0154.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/bed.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0155.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/prepare the bed (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0156.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BED",
+        "video_file": "prepare the bed/prepare the bed.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0157.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0158.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0159.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0160.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0161.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve 1.MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0162.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve food.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0163.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve the food (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0164.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve the food.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0165.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "FOOD",
+        "video_file": "serve the food/serve.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0166.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (1).MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0167.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0168.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0169.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0170.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0174.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0175.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0176.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0177.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/shirt.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0178.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/wear the shirt (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0179.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SHIRT",
+        "video_file": "wear the shirt/wear the shirt.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0180.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0181.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0182.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0183.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0184.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/angry.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0185.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/why are you angry (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0186.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "ANGRY",
+        "video_file": "why are you angry/why are you angry.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0187.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0188.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0189.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0190.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0191.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad 1.MP4",
+        "saved_as": "cslrt_cslrt_signer_1_0192.npy",
+        "signer": "cslrt_signer_1"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/bad.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0193.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/you are bad (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0194.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "BAD",
+        "video_file": "you are bad/you are bad.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0195.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0196.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0197.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0198.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0199.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/good.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0200.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/you are good (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0201.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "GOOD",
+        "video_file": "you are good/you are good.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0202.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0203.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0204.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0205.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0206.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/welcome.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0207.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/you are welcome (2).mp4",
+        "saved_as": "cslrt_cslrt_signer_2_0208.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WELCOME",
+        "video_file": "you are welcome/you are welcome.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0209.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (2).MP4",
+        "saved_as": "cslrt_cslrt_signer_2_0210.npy",
+        "signer": "cslrt_signer_2"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (3).MP4",
+        "saved_as": "cslrt_cslrt_signer_3_0211.npy",
+        "signer": "cslrt_signer_3"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (4).MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0212.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine (5).MP4",
+        "saved_as": "cslrt_cslrt_signer_5_0213.npy",
+        "signer": "cslrt_signer_5"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/medicine.MP4",
+        "saved_as": "cslrt_cslrt_signer_4_0214.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/you need a medicine, take this one..mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0215.npy",
+        "signer": "cslrt_signer_4"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "MEDICINE",
+        "video_file": "you need a medicine, take this one/you need a medicine, take this one.mp4",
+        "saved_as": "cslrt_cslrt_signer_4_0216.npy",
+        "signer": "cslrt_signer_4"
+      }
+    ],
+    "val": [
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/krishnarajyouareperfect_2.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect -2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/0403(32).mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/0403(30).mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/krishnarajboy1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/NachikethBoy2.mov",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/Food2.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/manideepeat-2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/Friend -3.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drinking -1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/krishnarajdrink2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/manideep girl-2.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl 3.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/NachikethBrother1.mov",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother -2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/NachikethGood3.mov",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/0403(93).mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father -1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/0403(96).mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help -1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help3.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/0403(47).mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/NachikethMother1.mov",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/KrishnarajName1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name -2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/KrishnarajSleep3.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/KrishnarajSleep1.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/manideepsit-1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/Sorry -3.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/Sorry2.mov",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/0403(68).mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/0403(69).mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop3.mov",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/KrishnarajStop2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/manideepthankyou-1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/manideepthankyou-2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/0403(118).mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/Today2.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/krishnarajwelcome_2.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/Welcome -3.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/krishnarajwork_1.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/manideepwork-1.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/Yesterday2.mov",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/Yesterday3.mov",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/0403(137).mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/KrishnarajWrite1.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/Good morning -2.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Nachikethhello3.mp4",
+        "saved_as": "amrita_val_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/manideephello-1.mp4",
+        "saved_as": "amrita_val_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0004.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0019.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0026.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "SLEEP",
+        "video_file": "go and sleep/sleep (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0035.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0058.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0066.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0073.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0092.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (6).mp4",
+        "saved_as": "cslrt_cslrt_signer_6_0142.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0148.npy",
+        "signer": "cslrt_signer_6"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (6).MP4",
+        "saved_as": "cslrt_cslrt_signer_6_0171.npy",
+        "signer": "cslrt_signer_6"
+      }
+    ],
+    "test": [
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/0403(22).mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/You are perfect -3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YOU_ARE_PERFECT",
+        "video_file": "sign project/10.youareperfect/0403(23).mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/NachikethBad1.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad -2.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BAD",
+        "video_file": "sign project/14.bad/Bad_1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/Boy1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/krishnarajboy2.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BOY",
+        "video_file": "sign project/15.boy/krishnarajboy3.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/NachikethEat2.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/Eat -3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "EAT",
+        "video_file": "sign project/16.eat/0403(38).mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/KrishnarajFriend1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/0403(39).mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FRIEND",
+        "video_file": "sign project/17.friend/KrishnarajFriend2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/NachikethDrinking2.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/krishnarajdrink3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "DRINK",
+        "video_file": "sign project/18.drinking/Drinking -3.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl 2.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl_1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GIRL",
+        "video_file": "sign project/19.girl/Girl 1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/Brother_2.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/0403(90).mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "BROTHER",
+        "video_file": "sign project/20.brother/krishnarajBrother2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/NachikethGood2.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/manideepgood-1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD",
+        "video_file": "sign project/21.good/manideepgood-2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/KrishnarajFather3.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father2.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "FATHER",
+        "video_file": "sign project/22.father/Father1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/NachikethHelp1.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/Help -3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELP",
+        "video_file": "sign project/24.help/KrishnarajHelp2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother -2.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/Mother_3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "MOTHER",
+        "video_file": "sign project/25.mother/manideepmother-2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/manideepname-1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/0403(73).mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "NAME",
+        "video_file": "sign project/26.NAME/Name -1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep1.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep -1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SLEEP",
+        "video_file": "sign project/30.sleep/Sleep1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/0403(53).mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/KrishnarajSit3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SIT",
+        "video_file": "sign project/31.sit/Sit2.mov",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/manideepsorry-1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/Sorry -1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "SORRY",
+        "video_file": "sign project/32.sorry/Sorry3.mov",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/Stand3.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/KrishnarajStand3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STAND",
+        "video_file": "sign project/33.stand/manideepstand-2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/manideepstop-1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/STOP 3.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "STOP",
+        "video_file": "sign project/34.stop/Stop 2(1).mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/ThankYou2.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/Thankyou -1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "THANK_YOU",
+        "video_file": "sign project/38.thankyou/KrishnarajThankyou1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/0403(117).mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/0403(116).mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "TODAY",
+        "video_file": "sign project/39.today/manideeptoday-1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/WELCOME 3.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/manideepwelcome-1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WELCOME",
+        "video_file": "sign project/41.welcome/Welcome 2(1).mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/0403(125).mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/manideepwork-2.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WORK",
+        "video_file": "sign project/42.work/Work -1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/Yesterday -1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/krishnarajyesterday_2.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "YESTERDAY",
+        "video_file": "sign project/43.yesterday/manideepyesterday-2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write2.mov",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/Write -1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "WRITE",
+        "video_file": "sign project/46.write/WRITE 1.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/Good morning -3.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/Good morning 1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "GOOD_MORNING",
+        "video_file": "sign project/7.goodmorning/NachikethGoodMorning2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello1.mp4",
+        "saved_as": "amrita_test_0.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello -1.mp4",
+        "saved_as": "amrita_test_1.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "amrita",
+        "gloss": "HELLO",
+        "video_file": "sign project/9.hello/Hello -2.mp4",
+        "saved_as": "amrita_test_2.npy",
+        "signer": "amrita_signer"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0005.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "WATER",
+        "video_file": "bring water for me/bring water for me (8).MP4",
+        "saved_as": "cslrt_cslrt_signer_8_0006.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0020.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "PLEASE",
+        "video_file": "can you repeat that please/can you repeat that please (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0021.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "CONGRATULATIONS",
+        "video_file": "congratulations/congratulations (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0027.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0059.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "help me/help me (8).MP4",
+        "saved_as": "cslrt_cslrt_signer_8_0060.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HOW_ARE_YOU",
+        "video_file": "hi how are you/hi how are you (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0067.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HELP",
+        "video_file": "how can i help you/how can i help you (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0074.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "HUNGRY",
+        "video_file": "i am hungry/i am hungry   (7).MP4",
+        "saved_as": "cslrt_cslrt_signer_7_0093.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NAME",
+        "video_file": "my name is xxxxxxxx/my name is xxxxxxxx (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0143.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0149.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "NICE_TO_MEET_YOU",
+        "video_file": "nice to meet you/nice to meet you (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0150.npy",
+        "signer": "cslrt_signer_8"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (7).mp4",
+        "saved_as": "cslrt_cslrt_signer_7_0172.npy",
+        "signer": "cslrt_signer_7"
+      },
+      {
+        "source": "cslrt",
+        "gloss": "THANK_YOU",
+        "video_file": "thank you so much/thank you so much (8).mp4",
+        "saved_as": "cslrt_cslrt_signer_8_0173.npy",
+        "signer": "cslrt_signer_8"
+      }
+    ]
+  }
+}

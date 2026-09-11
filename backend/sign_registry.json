@@ -452,5 +452,170 @@
     "tags": [
       "action"
     ]
+  },
+  "pain": {
+    "sign_id": "pain",
+    "gloss": "PAIN",
+    "asset_type": "video",
+    "asset": "clips/hurt.mp4",
+    "url": "/media/isl/clips/hurt.mp4",
+    "verified": true,
+    "duration": 3.8,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (hurt.mp4)",
+    "tags": [
+      "medical",
+      "symptom"
+    ]
+  },
+  "fever": {
+    "sign_id": "fever",
+    "gloss": "FEVER",
+    "asset_type": "video",
+    "asset": "clips/fever.mp4",
+    "url": "/media/isl/clips/fever.mp4",
+    "verified": true,
+    "duration": 2.88,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (fever.mp4)",
+    "tags": [
+      "medical",
+      "symptom"
+    ]
+  },
+  "water": {
+    "sign_id": "water",
+    "gloss": "WATER",
+    "asset_type": "video",
+    "asset": "clips/water.mp4",
+    "url": "/media/isl/clips/water.mp4",
+    "verified": true,
+    "duration": 5.0,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (water.mp4)",
+    "tags": [
+      "noun",
+      "daily"
+    ]
+  },
+  "food": {
+    "sign_id": "food",
+    "gloss": "FOOD",
+    "asset_type": "video",
+    "asset": "clips/food.mp4",
+    "url": "/media/isl/clips/food.mp4",
+    "verified": true,
+    "duration": 3.48,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (food.mp4)",
+    "tags": [
+      "noun",
+      "daily"
+    ]
+  },
+  "cold": {
+    "sign_id": "cold",
+    "gloss": "COLD",
+    "asset_type": "video",
+    "asset": "clips/cold.mp4",
+    "url": "/media/isl/clips/cold.mp4",
+    "verified": true,
+    "duration": 3.32,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (cold.mp4)",
+    "tags": [
+      "medical",
+      "symptom"
+    ]
+  },
+  "tired": {
+    "sign_id": "tired",
+    "gloss": "TIRED",
+    "asset_type": "video",
+    "asset": "clips/tired.mp4",
+    "url": "/media/isl/clips/tired.mp4",
+    "verified": true,
+    "duration": 3.8,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (tired.mp4)",
+    "tags": [
+      "medical",
+      "symptom"
+    ]
+  },
+  "hungry": {
+    "sign_id": "hungry",
+    "gloss": "HUNGRY",
+    "asset_type": "video",
+    "asset": "clips/hungry.mp4",
+    "url": "/media/isl/clips/hungry.mp4",
+    "verified": true,
+    "duration": 4.12,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (hungry.mp4)",
+    "tags": [
+      "daily",
+      "symptom"
+    ]
+  },
+  "angry": {
+    "sign_id": "angry",
+    "gloss": "ANGRY",
+    "asset_type": "video",
+    "asset": "clips/angry.mp4",
+    "url": "/media/isl/clips/angry.mp4",
+    "verified": true,
+    "duration": 3.72,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (angry.mp4)",
+    "tags": [
+      "emotion"
+    ]
+  },
+  "congratulations": {
+    "sign_id": "congratulations",
+    "gloss": "CONGRATULATIONS",
+    "asset_type": "video",
+    "asset": "clips/congratulations.mp4",
+    "url": "/media/isl/clips/congratulations.mp4",
+    "verified": true,
+    "duration": 3.24,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (congratulations.mp4)",
+    "tags": [
+      "social",
+      "phrase"
+    ]
+  },
+  "nice_to_meet_you": {
+    "sign_id": "nice_to_meet_you",
+    "gloss": "NICE_TO_MEET_YOU",
+    "asset_type": "video",
+    "asset": "clips/nice_to_meet_you.mp4",
+    "url": "/media/isl/clips/nice_to_meet_you.mp4",
+    "verified": true,
+    "duration": 4.6,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (nice_to_meet_you.mp4)",
+    "tags": [
+      "greeting",
+      "social"
+    ]
+  },
+  "take_care": {
+    "sign_id": "take_care",
+    "gloss": "TAKE_CARE",
+    "asset_type": "video",
+    "asset": "clips/take_care.mp4",
+    "url": "/media/isl/clips/take_care.mp4",
+    "verified": true,
+    "duration": 3.96,
+    "resolution": "1920x1080",
+    "source": "Verified Corpus (take_care.mp4)",
+    "tags": [
+      "greeting",
+      "social",
+      "phrase"
+    ]
   }
 }

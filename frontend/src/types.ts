@@ -1,4 +1,4 @@
-export type Scenario = 'hospital' | 'bank';
+export type Scenario = 'hospital' | 'bank' | 'bus_stop' | 'railway' | 'shopping' | 'government';
 export type Lang = 'en' | 'hi';
 
 export type TranslationStatus = 'supported' | 'partially_supported' | 'unsupported';
@@ -12,7 +12,7 @@ export interface SignItem {
 }
 
 export type ServerMsg =
-  | { type: 'hello'; model: boolean; scenario: Scenario; vocab: string[]; presets: string[]; clips: string[] }
+  | { type: 'hello'; model: boolean; scenario: Scenario; vocab: string[]; presets: string[]; quick_phrases?: string[]; clips: string[]; requirements?: any }
   | { type: 'candidate'; gloss: string; confidence: number }
   | { type: 'idle' }
   | {

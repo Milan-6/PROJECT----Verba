@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Building2, HeartPulse, Languages, Siren } from 'lucide-react';
+import { Building2, HeartPulse, Bus, Train, ShoppingBag, Landmark, Languages, Siren } from 'lucide-react';
 import { STR } from '../i18n';
 import type { Lang, Scenario } from '../types';
 import type { ConnStatus } from '../hooks/useSocket';
@@ -15,7 +15,14 @@ interface Props {
 
 export default function TopBar({ scenario, lang, conn, onScenario, onLang, onEmergency }: Props) {
   const t = STR[lang];
-  const modes: Scenario[] = ['hospital', 'bank'];
+  const modes: { key: Scenario; icon: any; label: string }[] = [
+    { key: 'hospital', icon: HeartPulse, label: t.hospital },
+    { key: 'bank', icon: Building2, label: t.bank },
+    { key: 'bus_stop', icon: Bus, label: t.bus_stop },
+    { key: 'railway', icon: Train, label: t.railway },
+    { key: 'shopping', icon: ShoppingBag, label: t.shopping },
+    { key: 'government', icon: Landmark, label: t.government },
+  ];
 
   return (
     <header className="topbar">
@@ -28,18 +35,19 @@ export default function TopBar({ scenario, lang, conn, onScenario, onLang, onEme
       {/* Mode Tabs: Gliding underline spring animation (Section 6 reference) */}
       <nav className="mode-tabs-container" role="tablist" aria-label="Scenario modes">
         {modes.map(m => {
-          const isActive = scenario === m;
+          const isActive = scenario === m.key;
+          const Icon = m.icon;
           return (
             <button
-              key={m}
+              key={m.key}
               role="tab"
               type="button"
               aria-selected={isActive}
               className={`mode-tab-btn ${isActive ? 'active' : ''}`}
-              onClick={() => onScenario(m)}
+              onClick={() => onScenario(m.key)}
             >
-              {m === 'hospital' ? <HeartPulse size={16} /> : <Building2 size={16} />}
-              {m === 'hospital' ? t.hospital : t.bank}
+              <Icon size={16} />
+              {m.label}
               {isActive && (
                 <motion.div
                   layoutId="mode-underline"

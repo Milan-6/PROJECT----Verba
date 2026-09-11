@@ -1,0 +1,272 @@
+{
+  "model_type": "SignMLP Combined Deployment",
+  "total_classes": 48,
+  "train_accuracy": 0.998,
+  "val_accuracy": 0.7368,
+  "test_accuracy": 0.7042,
+  "test_macro_f1": 0.5415,
+  "per_class": {
+    "BAD": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "BOY": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "BROTHER": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "CONGRATULATIONS": {
+      "samples": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "DRINK": {
+      "samples": 3,
+      "correct": 2,
+      "accuracy": 0.6667
+    },
+    "EAT": {
+      "samples": 3,
+      "correct": 2,
+      "accuracy": 0.6667
+    },
+    "FATHER": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "FRIEND": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "GIRL": {
+      "samples": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "GOOD": {
+      "samples": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "GOOD_MORNING": {
+      "samples": 3,
+      "correct": 2,
+      "accuracy": 0.6667
+    },
+    "HELLO": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "HELP": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "HOW_ARE_YOU": {
+      "samples": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "HUNGRY": {
+      "samples": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "MOTHER": {
+      "samples": 3,
+      "correct": 2,
+      "accuracy": 0.6667
+    },
+    "NAME": {
+      "samples": 4,
+      "correct": 2,
+      "accuracy": 0.5
+    },
+    "NICE_TO_MEET_YOU": {
+      "samples": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "PLEASE": {
+      "samples": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "SIT": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "SORRY": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "STAND": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "STOP": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "THANK_YOU": {
+      "samples": 4,
+      "correct": 3,
+      "accuracy": 0.75
+    },
+    "TODAY": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "WATER": {
+      "samples": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "WELCOME": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "WORK": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "WRITE": {
+      "samples": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "YESTERDAY": {
+      "samples": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    },
+    "YOU_ARE_PERFECT": {
+      "samples": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    }
+  },
+  "weak_spots": [
+    {
+      "class": "GIRL",
+      "accuracy": 0.0,
+      "samples": 2
+    },
+    {
+      "class": "GOOD",
+      "accuracy": 0.0,
+      "samples": 2
+    },
+    {
+      "class": "HOW_ARE_YOU",
+      "accuracy": 0.0,
+      "samples": 1
+    },
+    {
+      "class": "HUNGRY",
+      "accuracy": 0.0,
+      "samples": 1
+    },
+    {
+      "class": "NICE_TO_MEET_YOU",
+      "accuracy": 0.0,
+      "samples": 1
+    },
+    {
+      "class": "PLEASE",
+      "accuracy": 0.0,
+      "samples": 1
+    },
+    {
+      "class": "WATER",
+      "accuracy": 0.0,
+      "samples": 1
+    },
+    {
+      "class": "BOY",
+      "accuracy": 0.5,
+      "samples": 2
+    },
+    {
+      "class": "FRIEND",
+      "accuracy": 0.5,
+      "samples": 2
+    },
+    {
+      "class": "HELP",
+      "accuracy": 0.5,
+      "samples": 2
+    },
+    {
+      "class": "NAME",
+      "accuracy": 0.5,
+      "samples": 4
+    },
+    {
+      "class": "SIT",
+      "accuracy": 0.5,
+      "samples": 2
+    },
+    {
+      "class": "YESTERDAY",
+      "accuracy": 0.5,
+      "samples": 2
+    },
+    {
+      "class": "DRINK",
+      "accuracy": 0.6667,
+      "samples": 3
+    },
+    {
+      "class": "EAT",
+      "accuracy": 0.6667,
+      "samples": 3
+    },
+    {
+      "class": "GOOD_MORNING",
+      "accuracy": 0.6667,
+      "samples": 3
+    },
+    {
+      "class": "MOTHER",
+      "accuracy": 0.6667,
+      "samples": 3
+    }
+  ],
+  "comparison_with_previous": {
+    "previous_model": {
+      "vocabulary_size": 0,
+      "accuracy": 0.0
+    },
+    "combined_model": {
+      "vocabulary_size": 48,
+      "train_samples": 3027,
+      "val_samples": 38,
+      "test_samples": 71,
+      "val_accuracy": 0.7368,
+      "test_accuracy": 0.7042,
+      "macro_f1": 0.5415
+    },
+    "improvements": {
+      "new_classes_added": 48,
+      "additional_training_samples": 0,
+      "expanded_cross_signer_coverage": "7 new native signers incorporated from CSLRT"
+    }
+  }
+}

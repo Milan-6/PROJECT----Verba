@@ -9,7 +9,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useCamera } from '../hooks/useCamera';
-import { useLandmarks, LandmarkFrame, Quality } from '../hooks/useLandmarks';
+import { useLandmarks, LandmarkFrame, Quality, ModelStatus } from '../hooks/useLandmarks';
 import { Pt } from '../lib/features';
 
 const HAND_CONN: [number, number][] = [
@@ -41,9 +41,10 @@ interface Props {
   paused?: boolean;                      // e.g. bank PIN field focused -> stop the stream
   onVector: (v: Float32Array) => void;   // ~20 fps
   onQuality?: (q: Quality) => void;
+  onModelStatusChange?: (status: ModelStatus) => void;
 }
 
-export default function CameraPanel({ active, paused = false, onVector, onQuality }: Props) {
+export default function CameraPanel({ active, paused = false, onVector, onQuality, onModelStatusChange }: Props) {
   const video = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const cam = useCamera(video);
@@ -107,6 +108,10 @@ export default function CameraPanel({ active, paused = false, onVector, onQualit
 
   const { modelStatus } = useLandmarks(video, cam.status === 'on' && shouldRun, onFrame, 20);
   const isLive = cam.status === 'on' && shouldRun;
+
+  useEffect(() => {
+    onModelStatusChange?.(modelStatus);
+  }, [modelStatus, onModelStatusChange]);
 
   return (
     <div className="camera-panel-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--s-3)' }}>
