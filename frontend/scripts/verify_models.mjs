@@ -25,4 +25,12 @@ for (const file of requiredFiles) {
   console.log(`[verify_models] OK: ${file} (${(s.size / 1024 / 1024).toFixed(2)} MB)`);
 }
 
-console.log('[verify_models] Verification passed: all MediaPipe models packaged successfully.');
+// Also verify dist/media/isl
+const islDist = resolve(__dirname, '../dist/media/isl/clips');
+if (!existsSync(islDist)) {
+  console.error(`[verify_models] ERROR: Missing ISL clips in dist/media/isl/clips!`);
+  process.exit(1);
+}
+console.log('[verify_models] OK: ISL clips directory verified in dist/media/isl/clips');
+
+console.log('[verify_models] Verification passed: all MediaPipe models and ISL assets packaged successfully.');

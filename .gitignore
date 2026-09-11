@@ -11,6 +11,8 @@ Thumbs.db
 ml_pipeline/models/*.task
 frontend/public/mediapipe/*.task
 frontend/dist/mediapipe/*.task
+frontend/public/media/
+frontend/dist/media/
 
 # --- scratch ---
 *.log

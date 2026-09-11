@@ -38,12 +38,25 @@ interface Props {
 function resolveClip(clipUrl?: string | null): string {
   if (!clipUrl) return '';
   if (clipUrl.startsWith('http://') || clipUrl.startsWith('https://')) return clipUrl;
-  const backend = import.meta.env.VITE_BACKEND;
-  if (backend) {
-    const proto = location.protocol === 'https:' ? 'https' : 'http';
-    return `${proto}://${backend}${clipUrl.startsWith('/') ? '' : '/'}${clipUrl}`;
+
+  let path = clipUrl.startsWith('/') ? clipUrl : `/${clipUrl}`;
+  if (!path.startsWith('/media/isl/')) {
+    path = `/media/isl${path}`;
   }
-  return clipUrl;
+
+  const isCapacitor = typeof window !== 'undefined' && ((window as any).Capacitor || (window as any).VerbaNative || location.hostname === 'localhost');
+  if (isCapacitor) {
+    return path;
+  }
+
+  const savedBackend = typeof window !== 'undefined' ? localStorage.getItem('sb.backend') : null;
+  const backend = savedBackend || import.meta.env.VITE_BACKEND;
+  if (backend) {
+    const isLocalOrIp = /^(\d+\.\d+\.\d+\.\d+|localhost)(:\d+)?$/.test(backend);
+    const proto = isLocalOrIp ? 'http' : (location.protocol === 'https:' ? 'https' : 'http');
+    return `${proto}://${backend}${path}`;
+  }
+  return path;
 }
 
 export default function SignPlayer({
@@ -340,6 +353,8 @@ export default function SignPlayer({
               className={activeBuffer === 'A' ? 'visible' : 'hidden-preload'}
               muted
               playsInline
+              preload="auto"
+              disablePictureInPicture
               onEnded={advanceToNext}
               onError={() => advanceToNext()}
             />
@@ -348,6 +363,8 @@ export default function SignPlayer({
               className={activeBuffer === 'B' ? 'visible' : 'hidden-preload'}
               muted
               playsInline
+              preload="auto"
+              disablePictureInPicture
               onEnded={advanceToNext}
               onError={() => advanceToNext()}
             />

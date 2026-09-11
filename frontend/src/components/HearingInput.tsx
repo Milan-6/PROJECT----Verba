@@ -21,6 +21,11 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
   const submit = (s: string) => {
     const v = s.trim();
     if (!v) return;
+    if (disabled) {
+      setErr('Server offline. Tap the status dot in the top bar to verify server IP address.');
+      return;
+    }
+    setErr('');
     onSend(v);
     setText('');
   };
@@ -56,10 +61,9 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
         <input
           className="text-input-field"
           value={text}
-          onChange={e => setText(e.target.value)}
+          onChange={e => { setText(e.target.value); if (err) setErr(''); }}
           placeholder={t.typeHere}
           autoFocus
-          disabled={disabled}
           aria-label={t.typeHere}
         />
         <button
@@ -67,7 +71,7 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
           className={listening ? 'btn-emergency' : 'btn-outline'}
           style={{ minHeight: '44px', whiteSpace: 'nowrap' }}
           onClick={mic}
-          disabled={disabled || !supported}
+          disabled={!supported}
           title={supported ? '' : 'Not supported in this browser'}
         >
           {listening ? <MicOff size={18} /> : <Mic size={18} />} {listening ? t.micStop : t.mic}
@@ -76,7 +80,7 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
           type="submit"
           className="btn-ink"
           style={{ minHeight: '44px', whiteSpace: 'nowrap' }}
-          disabled={disabled || !text.trim()}
+          disabled={!text.trim()}
         >
           <Send size={18} /> {t.send}
         </button>
@@ -100,7 +104,6 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
                 key={p}
                 type="button"
                 className="quick-phrase-pill-btn"
-                disabled={disabled}
                 onClick={() => submit(p)}
                 title="Tap to translate to ISL video playback"
               >
@@ -124,7 +127,6 @@ export default function HearingInput({ lang, presets = [], quickPhrases = [], di
                 key={p}
                 type="button"
                 className="quick-phrase-pill-btn preset-phrase-btn"
-                disabled={disabled}
                 onClick={() => submit(p)}
                 title="Tap to translate to ISL video playback"
               >

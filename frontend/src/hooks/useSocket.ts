@@ -19,23 +19,67 @@ export function useSocket(scenario: Scenario, onMessage: (m: ServerMsg) => void)
   useEffect(() => {
     let closed = false;
     const connect = () => {
-      const proto = location.protocol === 'https:' ? 'wss' : 'ws';
-      const host = import.meta.env.VITE_BACKEND ?? location.host;
-      const sock = new WebSocket(`${proto}://${host}/ws/session?scenario=${scenario}`);
-      ws.current = sock;
-      setStatus('connecting');
-      sock.onopen = () => { retry.current = 0; setStatus('open'); };
-      sock.onmessage = e => { try { cb.current(JSON.parse(e.data) as ServerMsg); } catch { /* ignore */ } };
-      sock.onclose = () => {
+      // 1. Resolve host
+      let host = '';
+      if (typeof window !== 'undefined') {
+        const saved = localStorage.getItem('sb.backend');
+        if (saved && saved.trim()) {
+          host = saved.trim();
+        }
+      }
+      if (!host) {
+        host = import.meta.env.VITE_BACKEND ?? '';
+      }
+      if (!host) {
+        const isCapacitor = typeof window !== 'undefined' && ((window as any).Capacitor || (window as any).VerbaNative || location.hostname === 'localhost');
+        if (isCapacitor) {
+          host = '192.168.241.251:8000';
+        } else {
+          host = location.host;
+        }
+      }
+
+      // 2. Resolve protocol
+      // If host is an IP or localhost, always use plain 'ws'
+      const isLocalOrIp = /^(\d+\.\d+\.\d+\.\d+|localhost)(:\d+)?$/.test(host);
+      const proto = isLocalOrIp ? 'ws' : (location.protocol === 'https:' ? 'wss' : 'ws');
+
+      try {
+        const sock = new WebSocket(`${proto}://${host}/ws/session?scenario=${scenario}`);
+        ws.current = sock;
+        setStatus('connecting');
+        sock.onopen = () => { retry.current = 0; setStatus('open'); };
+        sock.onmessage = e => { try { cb.current(JSON.parse(e.data) as ServerMsg); } catch { /* ignore */ } };
+        sock.onclose = () => {
+          setStatus('closed');
+          if (closed) return;
+          const delay = Math.min(8000, 500 * 2 ** retry.current++);
+          timer.current = window.setTimeout(connect, delay);
+        };
+        sock.onerror = () => sock.close();
+      } catch (err) {
         setStatus('closed');
-        if (closed) return;
-        const delay = Math.min(8000, 500 * 2 ** retry.current++);
-        timer.current = window.setTimeout(connect, delay);
-      };
-      sock.onerror = () => sock.close();
+        if (!closed) {
+          const delay = Math.min(8000, 500 * 2 ** retry.current++);
+          timer.current = window.setTimeout(connect, delay);
+        }
+      }
     };
     connect();
-    return () => { closed = true; window.clearTimeout(timer.current); ws.current?.close(); };
+
+    const handleServerChange = () => {
+      if (ws.current) ws.current.close();
+      retry.current = 0;
+      connect();
+    };
+    window.addEventListener('verba-server-changed', handleServerChange);
+
+    return () => {
+      closed = true;
+      window.clearTimeout(timer.current);
+      window.removeEventListener('verba-server-changed', handleServerChange);
+      ws.current?.close();
+    };
   }, [scenario]);
 
   const send = useCallback((m: ClientMsg) => {

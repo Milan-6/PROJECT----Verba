@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "node scripts/ensure_models.mjs && tsc -p . && vite build && node scripts/verify_models.mjs",
+    "build": "node scripts/ensure_models.mjs && node scripts/ensure_assets.mjs && tsc -p . && vite build && node scripts/verify_models.mjs",
     "preview": "vite preview --host",
-    "models": "node scripts/ensure_models.mjs"
+    "models": "node scripts/ensure_models.mjs",
+    "assets": "node scripts/ensure_assets.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.2",
