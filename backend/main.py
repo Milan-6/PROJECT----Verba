@@ -11,8 +11,13 @@ Runs without a trained model (recognition disabled, everything else works) so th
 built and demoed before data collection is finished.
 """
 from __future__ import annotations
-import json, os, time
+import json, os, time, sys
 from typing import Any
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
