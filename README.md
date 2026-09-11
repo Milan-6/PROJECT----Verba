@@ -163,3 +163,5 @@ Four things stay chromatic on purpose, because they carry meaning rather than st
 hand-tracking chip (green / amber / grey), the camera-error overlay, the connection dot, and the
 EMERGENCY button. Every animation is wrapped in `prefers-reduced-motion: reduce` — a Deaf user is
 visually scanning for the recognised word, and motion competes for that attention.
+#   P R O J E C T - - - - V e r b a  
+ 
