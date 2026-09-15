@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { STR } from '../i18n';
 import type { Lang, SignItem, TranslationStatus } from '../types';
+import { getHttpBaseUrl } from '../lib/config';
 
 interface Props {
   text: string;
@@ -44,19 +45,7 @@ function resolveClip(clipUrl?: string | null): string {
     path = `/media/isl${path}`;
   }
 
-  const isCapacitor = typeof window !== 'undefined' && ((window as any).Capacitor || (window as any).VerbaNative || location.hostname === 'localhost');
-  if (isCapacitor) {
-    return path;
-  }
-
-  const savedBackend = typeof window !== 'undefined' ? localStorage.getItem('sb.backend') : null;
-  const backend = savedBackend || import.meta.env.VITE_BACKEND;
-  if (backend) {
-    const isLocalOrIp = /^(\d+\.\d+\.\d+\.\d+|localhost)(:\d+)?$/.test(backend);
-    const proto = isLocalOrIp ? 'http' : (location.protocol === 'https:' ? 'https' : 'http');
-    return `${proto}://${backend}${path}`;
-  }
-  return path;
+  return `${getHttpBaseUrl()}${path}`;
 }
 
 export default function SignPlayer({

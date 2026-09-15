@@ -37,7 +37,28 @@ VOCAB_DIR = os.path.join(ROOT, "vocab")
 FRAME_DIM = 270
 
 app = FastAPI(title="Vebra")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+
+# Explicit CORS configuration: Capacitor mobile app, Vite dev, and local network IPs
+ALLOWED_ORIGINS = [
+    "http://localhost",
+    "https://localhost",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "capacitor://localhost",
+    "ionic://localhost",
+]
+LAN_ORIGIN_REGEX = r"^https?://(localhost|127\.0\.0\.1|10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3})(:\d+)?$"
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=LAN_ORIGIN_REGEX,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 if os.path.isdir(ASSETS):
     app.mount("/media", StaticFiles(directory=ASSETS), name="media")  # NOT /assets: the built frontend already uses /assets/*
 
@@ -261,3 +282,8 @@ async def session(ws: WebSocket, scenario: str = Query("hospital")):
 DIST = os.path.join(ROOT, "..", "frontend", "dist")
 if os.path.isdir(DIST):
     app.mount("/", StaticFiles(directory=DIST, html=True), name="frontend")
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

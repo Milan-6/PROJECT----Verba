@@ -4,6 +4,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ClientMsg, Scenario, ServerMsg } from '../types';
+import { getWsBaseUrl, getBackendHost } from '../lib/config';
 
 export type ConnStatus = 'connecting' | 'open' | 'closed';
 
@@ -19,46 +20,34 @@ export function useSocket(scenario: Scenario, onMessage: (m: ServerMsg) => void)
   useEffect(() => {
     let closed = false;
     const connect = () => {
-      // 1. Resolve host
-      let host = '';
-      if (typeof window !== 'undefined') {
-        const saved = localStorage.getItem('sb.backend');
-        if (saved && saved.trim()) {
-          host = saved.trim();
-        }
-      }
-      if (!host) {
-        host = import.meta.env.VITE_BACKEND ?? '';
-      }
-      if (!host) {
-        const isCapacitor = typeof window !== 'undefined' && ((window as any).Capacitor || (window as any).VerbaNative || location.hostname === 'localhost');
-        if (isCapacitor) {
-          host = '192.168.241.251:8000';
-        } else {
-          host = location.host;
-        }
-      }
-
-      // 2. Resolve protocol
-      // If host is an IP or localhost, always use plain 'ws'
-      const isLocalOrIp = /^(\d+\.\d+\.\d+\.\d+|localhost)(:\d+)?$/.test(host);
-      const proto = isLocalOrIp ? 'ws' : (location.protocol === 'https:' ? 'wss' : 'ws');
+      const wsBase = getWsBaseUrl();
+      const wsUrl = `${wsBase}/ws/session?scenario=${scenario}`;
+      console.log(`[VERBA-DEV] WebSocket connecting to: ${wsUrl} (host: ${getBackendHost()})`);
 
       try {
-        const sock = new WebSocket(`${proto}://${host}/ws/session?scenario=${scenario}`);
+        const sock = new WebSocket(wsUrl);
         ws.current = sock;
         setStatus('connecting');
-        sock.onopen = () => { retry.current = 0; setStatus('open'); };
+        sock.onopen = () => {
+          retry.current = 0;
+          setStatus('open');
+          console.log(`[VERBA-DEV] WebSocket connected successfully: ${wsUrl}`);
+        };
         sock.onmessage = e => { try { cb.current(JSON.parse(e.data) as ServerMsg); } catch { /* ignore */ } };
-        sock.onclose = () => {
+        sock.onclose = (ev) => {
           setStatus('closed');
+          console.warn(`[VERBA-DEV] WebSocket closed (code: ${ev.code}, reason: ${ev.reason || 'none'}). Reconnecting...`);
           if (closed) return;
           const delay = Math.min(8000, 500 * 2 ** retry.current++);
           timer.current = window.setTimeout(connect, delay);
         };
-        sock.onerror = () => sock.close();
+        sock.onerror = (ev) => {
+          console.error(`[VERBA-DEV] WebSocket connection error on: ${wsUrl}`, ev);
+          sock.close();
+        };
       } catch (err) {
         setStatus('closed');
+        console.error(`[VERBA-DEV] WebSocket throw error on: ${wsUrl}`, err);
         if (!closed) {
           const delay = Math.min(8000, 500 * 2 ** retry.current++);
           timer.current = window.setTimeout(connect, delay);
